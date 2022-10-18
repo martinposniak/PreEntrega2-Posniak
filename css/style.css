@@ -8,12 +8,8 @@
 
 
 body {  
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(/assets/img/fondo-de-pantalla.jpg);
-
-  /*background: #D3CCE3;   fallback for old browsers 
-background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);   Chrome 10-25, Safari 5.1-6 
-background: linear-gradient(to right, #E9E4F0, #D3CCE3);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background-size: cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/img/fondo-de-pantalla.jpg);
+  background-size: contain;
 }
 
 
@@ -54,9 +50,13 @@ background-size: cover;
     .nav-bar {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
-      gap: 10px;
+      flex-wrap: wrap;
       background-color: rgb(0, 128, 0);     
+    }
+/*Acá corresonde al background image y tamaño ajustado para vista para tablet*/
+    body {  
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), ;
+      background-size: cover;
     }
 
  /*Acá declaramos media querie para las fotos de los jugadores*/
@@ -84,7 +84,10 @@ background-size: cover;
   height: 213px;
 }
 
-
+.fotoDelpotro {
+  width: 98.5px;
+  height: 212px;
+}
 
 
 
@@ -685,134 +688,72 @@ border: 2px solid black;
 
 /*Acá comienza la edición del formulario de CONTACTO, hecho con FLEXBOX*/
 
-main .section-contacto {
+.contactoTitulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contacto {
+  display: flex;
+ flex-direction: row;
+}
+
+.contactoTexto {
   display: flex;
   flex-direction: column;
-}
-
-main .section-contacto-titulo {
-  display: flex;
-  flex-direction: column;
-}
-
-main .section2-contacto {
-  display: flex;
-  flex-direction: column;
-}
-
-main .section2-contacto-texto {
-  display: flex;
-  flex-direction: column;
-}
-
-.iconoEmailUno {
-  filter: invert(100%);
-}
-.iconoInstagramUno {
-  filter: invert(100%);
-}
-.iconoFacebookUno {
-  filter: invert(100%);
-}
-
-
-
-main .section-contacto .section-contacto-titulo h2 {
- align-self: center;
-}
-
-main .section-contacto .section2-contacto .section2-contacto-texto p {
   width: 500px;
-  height: 50px;
-  margin-left: 10px;
+  padding: 10px;
+}
+
+.contactoTexto p {
+  display: block;
+  margin-top: 0px;
   margin-bottom: 1rem;
   margin-block-start: 1em;
   margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
-main .section-contacto .section2-contacto .section2-contacto-texto h3 {
-  margin-left: 10px;
+.contactoTexto ul {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
 }
 
-main .section-contacto .section2-contacto .section2-contacto-texto ul li {
+.contactoTexto ul {
   list-style: none;
-  margin-left: 50px;
 }
 
-.section3-contacto-formulario {
+.contactForm form {
   display: flex;
+  flex-direction: column;
 }
 
-main .section-contacto .section2-contacto .section3-contacto-formulario .contactoFormularioPartes {
-  width: 195px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-bottom: 5px;
-  border-width: 0.1rem;
-  border-top-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+.contactForm .contactFormNombreApellido {
+  align-self: center;
 }
 
-main .section-contacto .section2-contacto .section3-contacto-formulario .contactoFormularioPartesDos {
-  width: 195px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-bottom: 5px;
-  border-width: 0.1rem;
-  border-top-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;    
+.contactForm .contactFormAsuntoEmail {
+  align-self: center;
 }
 
-main .section-contacto .section2-contacto .section3-contacto-formulario label {
-  display: inline-block;
+.contactForm .textArea {
+  align-self: center;
 }
 
-main .section-contacto .section2-contacto .section3-contacto-formulario textarea {
-  height: 200px;
-  resize: none;
-  border-width: 0.1rem;
-  border-top-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  width: 400px;
+.botonEnviar {
+  align-self: center;
+  color: black;
 }
 
-main .section-contacto .section2-contacto .section3-contacto-formulario .botonEnviar {
-  color: #000000;
-  background-color: rgb(235, 238, 235);
-  border-color: rgb(235, 238, 235);
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 1rem;
-  padding: 10px;    
-}
-
-main .section-contacto .section2-contacto .section3-contacto-formulario {
-  margin-left: 550px;
-  margin-top: -200px;
-
+.contactFormPartsOne {
+  border-bottom-right-radius: 10px;
 }
 
 
 
 /*Acá comienza la edición del FOOTER*/
-
-
-.iconoEmailDos {
-  filter: invert(100%);
-  /*background-color: white;*/
-}
-.iconoInstagramDos {
-  filter: invert(100%);
-  /*background-color: white;*/
-}
-.iconoFacebookDos {
-  filter: invert(100%);
-  /*background-color: white;*/
-}
-
-
-
-
 
 
 
