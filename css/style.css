@@ -7,11 +7,12 @@
 }
 
 
-body {  
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/img/fondo-de-pantalla.jpg);
-  background-size: contain;
-}
+body {
+  webkit
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(/assets/img/artur-ashe-stadium-fondo.jpg);
+  background-size: cover;
 
+}
 
 
 /*ACÁ ES COMIENZA EL ARMADO DEL HEADER Y EL NAVBAR CON FLEXBOX*/
@@ -54,12 +55,8 @@ body {
       background-color: rgb(0, 128, 0);     
     }
 /*Acá corresonde al background image y tamaño ajustado para vista para tablet*/
-    body {  
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), ;
-      background-size: cover;
-    }
 
- /*Acá declaramos media querie para las fotos de los jugadores*/
+ /*Acá declaramos media querie para las fotos de los jugadores del index.html*/
     .container {
       display: flex;
       flex-direction: row;
@@ -268,11 +265,13 @@ body {
 /*ACÁ CORRESPONDE AL PÁRRAFO DE DEL POTRO*/
 
 .videoBigFour {
-  width: 75px;
-  height: 75px;
+  width: 700px;
+  height: 300px;
+  align-self: center;
 }
 
 .parrafo {
+  width: 700px;
 
 }
 
@@ -679,6 +678,7 @@ border: 2px solid black;
 .container-todoslosproductos {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
     text-align: center;
@@ -742,13 +742,30 @@ border: 2px solid black;
   align-self: center;
 }
 
+.textAreaModify {
+  border-bottom-right-radius: 40px;
+}
+
 .botonEnviar {
   align-self: center;
   color: black;
+  border-radius: 5px;
+  width: 50px;
+  margin-bottom: 10px;
 }
 
 .contactFormPartsOne {
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 180px;
+  height: 40px;
+}
+
+.contactFormPartsTwo {
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 180px;
+  height: 40px;
 }
 
 
@@ -758,7 +775,7 @@ border: 2px solid black;
 
 
 footer {
-  width: 1350px;
+  width: 100vw;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
@@ -811,6 +828,12 @@ footer .datos li {
   list-style: none;
 }
 
+.enviar {
+  color: black;
+  width: 55px;
+  height: 25px;
+  border-radius: 5px;
+}
 
 
 
