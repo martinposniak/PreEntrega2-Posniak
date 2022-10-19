@@ -8,10 +8,12 @@
 
 
 body {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../assets/img/artur-ashe-stadium-fondo.jpg);
-  background-size: cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../assets/img/fondo-de-pantalla.jpg);
+  background-size: 1366px 2629px;
 
 }
+
+
 
 
 /*ACÁ ES COMIENZA EL ARMADO DEL HEADER Y EL NAVBAR CON FLEXBOX*/
@@ -19,7 +21,8 @@ body {
 .nav-bar {
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  flex-wrap: wrap;
+  width: 100%;
   justify-content: space-evenly;
   gap: 10px;
   background-color: rgb(0, 128, 0);
@@ -43,52 +46,16 @@ body {
 }
 
 
-  /*Acá declaramos media querie para vista tablet (768px)*/
-  /*Acá declaramos media querie para para el nav-bar*/
+/*ACÁ COMIENZA PARA EL INDEX LA COLOCACIÓN DE LAS FOTOS DE LOS JUGADORES HECHO CON FLEXBOX Y ANIMACIONES*/
+/*ACÁ CORRESPONDE A LA ANIMACIÓN FOTO DE DJOKOVIC*/
 
-  @media (max-width: 768px) {
-    .nav-bar {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      background-color: rgb(0, 128, 0);     
-    }
-/*Acá corresonde al background image y tamaño ajustado para vista para tablet*/
-
- /*Acá declaramos media querie para las fotos de los jugadores del index.html*/
-    .container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-/*Acá corresponde a los tamaños que tendrán las fotos de los jugadores para vista tablet (768px)*/
-.fotoDjokovic {
-  width: 142px;
-  height: 213px;
-}
-.fotoNadal {
-  width: 152.5px;
-  height: 213px;
-}
-.fotoFederer {
-  width: 119.5px;
-  height: 213px;
-}
-.fotoMurray {
-  width: 170.5px;
-  height: 213px;
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.fotoDelpotro {
-  width: 98.5px;
-  height: 212px;
-}
-
-
-
-    
-    /*ACÁ CORRESPONDE A LA ANIMACIÓN FOTO DE DJOKOVIC*/
 .animated1 {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
@@ -366,302 +333,6 @@ body {
 
 
 
-  }
-
-
-/*ACÁ COMIENZA PARA EL INDEX LA COLOCACIÓN DE LAS FOTOS DE LOS JUGADORES HECHO CON FLEXBOX Y ANIMACIONES*/
-
-.container {
-    display: flex;
-    width: 100vw;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-
-/*ACÁ CORRESPONDE A LA FOTO DE DJOKOVIC*/
-.animated1 {
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    animation-delay: 0.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-
-
-.djokovic {
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn;
-  }
-  
-
-
-  @-webkit-keyframes zoomIn {
-    from {
-      opacity: 0;
-      -webkit-transform: scale3d(0.3, 0.3, 0.3);
-      transform: scale3d(0.3, 0.3, 0.3);
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes zoomIn {
-    from {
-      opacity: 0;
-      -webkit-transform: scale3d(0.3, 0.3, 0.3);
-      transform: scale3d(0.3, 0.3, 0.3);
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  }
-
-  
-/*ACÁ CORRESPONDE A LA FOTO DE NADAL*/
-.animated2 {
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    animation-delay: 1.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-
-
-.nadal {
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn;
-  }
-  
-
-
-  @-webkit-keyframes zoomIn {
-    from {
-      opacity: 0;
-      -webkit-transform: scale3d(0.3, 0.3, 0.3);
-      transform: scale3d(0.3, 0.3, 0.3);
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes zoomIn {
-    from {
-      opacity: 0;
-      -webkit-transform: scale3d(0.3, 0.3, 0.3);
-      transform: scale3d(0.3, 0.3, 0.3);
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  }
-
-
-
-/*ACÁ CORRESPONDE A LA FOTO DE FEDERER*/
-.animated3 {
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    animation-delay: 2.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-
-
-.federer {
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn;
-  }
-  
-
-
-  @-webkit-keyframes zoomIn {
-    from {
-      opacity: 0;
-      -webkit-transform: scale3d(0.3, 0.3, 0.3);
-      transform: scale3d(0.3, 0.3, 0.3);
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes zoomIn {
-    from {
-      opacity: 0;
-      -webkit-transform: scale3d(0.3, 0.3, 0.3);
-      transform: scale3d(0.3, 0.3, 0.3);
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  }
-
-
-
-/*ACÁ CORRESPONDE A LA FOTO DE MURRAY*/
-
-.animated4 {
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    animation-delay: 3.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-
-
-.murray {
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn;
-  }
-  
-
-
-  @-webkit-keyframes zoomIn {
-    from {
-      opacity: 0;
-      -webkit-transform: scale3d(0.3, 0.3, 0.3);
-      transform: scale3d(0.3, 0.3, 0.3);
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes zoomIn {
-    from {
-      opacity: 0;
-      -webkit-transform: scale3d(0.3, 0.3, 0.3);
-      transform: scale3d(0.3, 0.3, 0.3);
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  }
-
-
-
-/*ACÁ CORRESPONDE A LA FOTO DE DEL POTRO*/
-
-
-.parrafo {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-border: 2px solid black;
-
-}
-
-.parrafo section {
-    font-size: 1rem;
-    text-align: center;
-
-}
-
-.videoBigFour {
-  align-self: center;
-
-}
-
-.animated5 {
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    animation-delay: 4.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-
-
-.delPotro {
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn;
-  }
-  
-
-
-  @-webkit-keyframes zoomIn {
-    from {
-      opacity: 0;
-      -webkit-transform: scale3d(0., 0., 0.);
-      transform: scale3d(0., 0., 0.);
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes zoomIn {
-    from {
-      opacity: 0;
-      -webkit-transform: scale3d(0., 0., 0.);
-      transform: scale3d(0., 0., 0.);
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  }
-
-  /*ACÁ CORRESPONDE AL PÁRRAFO DE HOMENAJE*/
-
-  .animated6 {
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    animation-delay: 4.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-  
-  
-  .homenaje {
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn;
-  }
-  
-  
-  
-  @-webkit-keyframes zoomIn {
-    from {
-      opacity: 0;
-      -webkit-transform: scale3d(0., 0., 0.);
-      transform: scale3d(0., 0., 0.);
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes zoomIn {
-    from {
-      opacity: 0;
-      -webkit-transform: scale3d(0., 0., 0.);
-      transform: scale3d(0., 0., 0.);
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  }
-  
-
-
-  
-
-
-
 
 /*Acá comienza la edición del MAIN del index.html*/
 
@@ -683,166 +354,15 @@ border: 2px solid black;
     text-align: center;
 }
 
-
-
-/*Acá comienza la edición del formulario de CONTACTO, hecho con FLEXBOX*/
-
-.contactoTitulo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.contacto {
-  display: flex;
- flex-direction: row;
-}
-
-.contactoTexto {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  padding: 10px;
-}
-
-.contactoTexto p {
-  display: block;
-  margin-top: 0px;
-  margin-bottom: 1rem;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-.contactoTexto ul {
-  margin-bottom: 1rem;
-  padding-left: 2rem;
-}
-
-.contactoTexto ul {
-  list-style: none;
-}
-
-.contactForm form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contactForm .contactFormNombreApellido {
-  align-self: center;
-}
-
-.contactForm .contactFormAsuntoEmail {
-  align-self: center;
-}
-
-.contactForm .textArea {
-  align-self: center;
-}
-
-.textAreaModify {
-  border-bottom-right-radius: 40px;
-}
-
-.botonEnviar {
-  align-self: center;
-  color: black;
-  border-radius: 5px;
-  width: 50px;
-  margin-bottom: 10px;
-}
-
-.contactFormPartsOne {
-  border-bottom-right-radius: 15px;
-  border-top-left-radius: 15px;
-  width: 180px;
-  height: 40px;
-}
-
-.contactFormPartsTwo {
-  border-bottom-right-radius: 15px;
-  border-top-left-radius: 15px;
-  width: 180px;
-  height: 40px;
-}
-
-
-
-/*Acá comienza la edición del FOOTER*/
-
-
-
-footer {
-  width: 100vw;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-template-areas: "news PreguntasFrecuentes datos";
-}
-
-footer .news {
-  box-sizing: border-box;
-  width: 100%;
-  border: solid rgb(235, 238, 235) 5px;
-  border-radius: 1rem;
-  padding: 5px;
-  grid-area: news;
-}
-
-footer .preguntasFrecuentes {
-  box-sizing: border-box;
-  width: 100%;
-  border: solid rgb(235, 238, 235) 5px;
-  border-radius: 1rem;
-  padding: 5px;
-}
-
-footer .preguntasFrecuentes .preguntasFrecuentes__1 a  {
-  color: rgb(235, 238, 235);
-}
-
-footer .preguntasFrecuentes .preguntasFrecuentes__2 a  {
-  color: rgb(235, 238, 235);
-}
-
-footer .preguntasFrecuentes li {
-  list-style: none;
-}
-
-footer .preguntasFrecuentes li a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
-footer .datos {
-  box-sizing: border-box;
-  width: 100%;
-  border: solid rgb(235, 238, 235) 5px;
-  border-radius: 1rem;
-  padding: 5px;
-}
-
-footer .datos li {
-  list-style: none;
-}
-
-.enviar {
-  color: black;
-  width: 55px;
-  height: 25px;
-  border-radius: 5px;
-}
-
-
-
-
 /**Acá comienza la edición de raquets.html**/
 
 /*Acá comienza la edición del main, dentro del cual hay partes hechas con GRIDS y FLEXBOX*/
 
 .titulo-raquetas h2 {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
 
 .grid-containerRaquetas {
@@ -853,6 +373,7 @@ footer .datos li {
   "raque-modeloUno raque-modeloDos raque-modeloTres raque-modeloCuatro"
   ;
   justify-items: center;
+  width: 100%;
 }
 
 .raque h5 span {
@@ -884,7 +405,7 @@ footer .datos li {
   flex-wrap: wrap;
   align-content: flex-start;
   align-items: flex-start;
-  width: 100vw;
+  width: 100%;
 }
 
 
@@ -893,8 +414,8 @@ footer .datos li {
 }
 
 .comoElegirRaquetaDeTenis p {
-  margin-left: 35px;
  line-height: 3cm;
+ margin-left: 35px;
 }
 
 .comoElegirRaquetaDeTenisTips li {
@@ -907,7 +428,7 @@ footer .datos li {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 100%;
 }
 
 .comoElegirRaquetaDeTenisTipsDosParrafo {
@@ -916,12 +437,14 @@ footer .datos li {
   flex-wrap: wrap;
   align-content: flex-start;
   align-items: flex-start;
-  width: 100vw;
+  width: 100%;
 }
 
 .comoElegirRaquetaDeTenisTipsDosParrafo p {
   line-height: 0.8cm;
+  
 }
+
 
 .comoElegirRaquetaDeTenisTipsDosParrafo .fotoRaquetaTips {
 align-self: center;
@@ -1313,7 +836,6 @@ align-self: center;
   }
 }
 
-
 /**Acá comienza la edición de clothes.html**/
 
 /*Acá comienza la edición del main,  dentro del cual hay partes hechas con GRIDS y FLEXBOX*/
@@ -1528,12 +1050,6 @@ align-self: center;
   }
 }
 
-
-
-
-
-
-
 /**Acá comienza la edición de balls.html**/
 
 /*Acá comienza la edición del main,  dentro del cual hay partes hechas con GRIDS y FLEXBOX*/
@@ -1745,6 +1261,723 @@ align-self: center;
   50% {
     opacity: 1;
   }
+}
+
+
+
+/*Acá comienza la edición del formulario de CONTACTO, hecho con FLEXBOX*/
+
+.contactoTitulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contacto {
+  display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+
+.contactoTexto {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 10px;
+}
+
+.contactoTexto p {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.contactoTexto ul {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.contactoTexto ul {
+  list-style: none;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contactForm .contactFormNombreApellido {
+  align-self: center;
+}
+
+.contactForm .contactFormAsuntoEmail {
+  align-self: center;
+}
+
+.contactForm .textArea {
+  align-self: center;
+}
+
+.textAreaModify {
+  border-bottom-right-radius: 40px;
+  width: 360px;
+  height: 290px;
+}
+
+.botonEnviar {
+  align-self: center;
+  color: black;
+  border-radius: 5px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.contactFormPartsOne {
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 180px;
+  height: 50px;
+}
+
+.contactFormPartsTwo {
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 180px;
+  height: 50px;
+}
+
+
+/*Acá comienza la edición del FOOTER*/
+
+
+
+footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "news PreguntasFrecuentes datos";
+}
+
+footer .news {
+  box-sizing: border-box;
+  width: 100%;
+  border: solid rgb(235, 238, 235) 5px;
+  border-radius: 1rem;
+  padding: 5px;
+  grid-area: news;
+}
+
+footer .preguntasFrecuentes {
+  box-sizing: border-box;
+  width: 100%;
+  border: solid rgb(235, 238, 235) 5px;
+  border-radius: 1rem;
+  padding: 5px;
+}
+
+footer .preguntasFrecuentes .preguntasFrecuentes__1 a  {
+  color: rgb(235, 238, 235);
+}
+
+footer .preguntasFrecuentes .preguntasFrecuentes__2 a  {
+  color: rgb(235, 238, 235);
+}
+
+footer .preguntasFrecuentes li {
+  list-style: none;
+}
+
+footer .preguntasFrecuentes li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+footer .datos {
+  box-sizing: border-box;
+  width: 100%;
+  border: solid rgb(235, 238, 235) 5px;
+  border-radius: 1rem;
+  padding: 5px;
+}
+
+footer .datos li {
+  list-style: none;
+}
+
+.enviar {
+  color: black;
+  width: 55px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+
+  /*Acá declaramos media querie para vista tablet (768px)*/
+  /*Acá declaramos media querie para para el nav-bar*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+  @media (max-width: 768px) {
+    .nav-bar {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-color: rgb(0, 128, 0);     
+    }
+
+    .nav-bar-a {
+      font-size: 12px;
+      text-align: center;
+    }
+    
+    
+    .nav-bar a {
+      line-height: 1cm;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+    }
+/*ACA MODIFIQUÉ EL TAMAÑO DEL TEXTO DEL MAIN DEL index.html*/
+
+.section-principal p {
+  font-size: 12px; 
+}
+
+.titulo-productos h2 {
+  font-size: 13px;
+}
+ /*Acá declaramos media querie para las fotos de los jugadores del index.html*/
+
+
+/*Acá corresponde a los tamaños que tendrán las fotos de los jugadores para vista tablet (768px)*/
+.fotoDjokovic {
+  width: 142px;
+  height: 213px;
+}
+.fotoNadal {
+  width: 152.5px;
+  height: 213px;
+}
+.fotoFederer {
+  width: 119.5px;
+  height: 213px;
+}
+.fotoMurray {
+  width: 170.5px;
+  height: 213px;
+}
+
+.fotoDelpotro {
+  width: 98.5px;
+  height: 212px;
+}
+
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*Acá comienza la edición del MAIN del index.html*/
+
+
+
+.titulo-productos h2 {
+  font-size: 15px;
+}
+
+
+.vistaMobileProductos {
+  width: 100px;
+  height: 100px;
+}
+
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+
+    
+  
+
+/*ACÁ CORRESPONDE AL PÁRRAFO DE DEL POTRO*/
+
+.videoBigFour {
+  width: 350px;
+  height: 150px;
+  align-self: center;
+}
+
+.parrafo {
+  width: 350px;
+
+}
+
+.parrafo section {
+  height: 106.5px;
+  font-size: 1rem;
+  text-align: center;
+
+}
+
+
+
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+
+/*ACA MODIFICAMOS EL TAMAÑO DE LAS IMAGENES DE LAS RAQUETAS DE raquets.html*/
+
+.titulo-raquetas h2 {
+  font-size: 15px;
+}
+
+.grid-containerRaquetas h4 {
+  font-size: 12px;
+}
+
+.grid-containerRaquetas h5 {
+  font-size: 10px;
+}
+
+.comoElegirRaquetaDeTenis p {
+  font-size: 10px;
+}
+
+.comoElegirRaquetaDeTenis h3 {
+  font-size: 12px;
+}
+
+.comoElegirRaquetaDeTenisTips li {
+  font-size: 10px;
+}
+
+.raquetasVistaMobile {
+  width: 100px;
+  height: 232px;
+}
+
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+
+/*ACA BAJAMOS EL LINE-HEIGHT PARA VISTA TABLET*/
+.comoElegirRaquetaDeTenis p { 
+  line-height: 1.5cm;
+  margin-left: 17.5px;
+ }
+
+ .comoElegirRaquetaDeTenisTips li {
+ margin-left: 32.5px;
+ padding-left: 12.5px;
+ line-height: 0.4cm;
+}
+
+ .comoElegirRaquetaDeTenisTipsDosParrafo p {
+  line-height: 0.4cm;
+  
+}
+
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+
+/*ACÁ MODIFICAMOS EL TAMAÑO DEL TITULO DEL FORMULARIO DE CONTACTO PARA VISTA TABLET*/
+
+.contactoTitulo h2 {
+  font-size: 15px;
+}
+
+
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*VISTA TABLET*/
+/*ACÁ MODIFICAMOS EL TAMAÑO DEL TITULO DEL FORMULARIO DE CONTACTO PARA VISTA TABLET*/
+
+.contacto .contactoTexto h3 {
+font-size: 13px;
+}
+
+.contacto .contactoTexto p {
+font-size: 12px;  
+}
+ /*ACÁ VAMOS A MODIFICAR TAMAÑO DE LOS ICONOS DE CONTACTO PARA VISTA TABLET*/
+
+ .contacto .contactoTexto ul .vistaMobileEmail {
+  width: 28px;
+  height: 28px;
+  }
+  
+  .contacto .contactoTexto ul .vistaMobileInstagram {
+  width: 28px;
+  height: 28px;
+  }
+  
+  .contacto .contactoTexto ul .vistaMobileFacebook {
+   width: 28px;
+   height: 28px; 
+  }
+
+/*ACÁ VAMOS A MODIFICAR TAMAÑO DE LOS ICONOS DEL FOOTER PARA VISTA TABLET*/
+.iconoEmailDos {
+  width: 28px;
+  height: 28px;
+} 
+.iconoInstagramDos {
+  width: 28px;
+  height: 28px;
+}
+.iconoFacebookDos {
+  width: 28px;
+  height: 28px;
+}
+
+}
+
+
+
+
+
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+  /*Acá declaramos media querie para vista mobile (576px)*/
+
+@media(max-width: 576px) {
+
+ /*Acá declaramos media querie para para el nav-bar*/
+  .nav-bar-a {
+    font-size: 8px;
+    text-align: center;
+  }
+  
+  
+  .nav-bar a {
+    line-height: 1cm;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  .fotoDjokovic {
+    width: 113px;
+    height: 169px;
+  }
+  .fotoNadal {
+    width: 113px;
+    height: 157px;
+  }
+  .fotoFederer {
+    width: 113px;
+    height: 201px;
+  }
+  .fotoMurray {
+    width: 113px;
+    height: 141px;
+  }
+  
+  .fotoDelpotro {
+    width: 113px;
+    height: 267px;
+  }
+  
+  
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+    
+
+  /*ACA MODIFICAMOS EL TAMAÑO DEL FORMULARIO DE CONTACTO*/
+
+.contacto .contactoTexto h3 {
+  font-size: 1rem;
+}
+
+.contacto .contactoTexto p {
+  font-size: 0.8rem;
+}
+
+.contacto .contactoTexto ul li {
+  font-size: 0.8rem;
+}
+
+.contacto .contactoTexto ul .vistaMobileEmail {
+width: 24px;
+height: 24px;
+}
+
+.contacto .contactoTexto ul .vistaMobileInstagram {
+width: 24px;
+height: 24px;
+}
+
+.contacto .contactoTexto ul .vistaMobileFacebook {
+ width: 24px;
+ height: 24px; 
+}
+
+.textAreaModify {
+  width: 500px;
+  height: 500px;
+}
+
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+
+
+
+
+  
+
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+
+
+/*Acá comienza la edición del MAIN del index.html*/
+
+
+
+.titulo-productos h2 {
+  font-size: 15px;
+}
+
+
+.vistaMobileProductos {
+  width: 100px;
+  height: 100px;
+}
+
+
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*Acá comienza la edición del formulario de CONTACTO, hecho con FLEXBOX*/
+
+
+.contactoTexto ul {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.contactoTexto ul {
+  list-style: none;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contactForm .contactFormNombreApellido {
+  align-self: center;
+}
+
+.contactForm .contactFormAsuntoEmail {
+  align-self: center;
+}
+
+.contactForm .textArea {
+  align-self: center;
+}
+
+
+.botonEnviar {
+  align-self: center;
+  color: black;
+  border-radius: 5px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.contactFormPartsOne {
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 155px;
+  height: 25px;
+}
+
+.contactFormPartsTwo {
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 155px;
+  height: 25px;
+}
+
+.textArea {
+  align-self: flex-start;
+}
+
+.textAreaModify {
+  width: 300px;
+  height: 145px;
+  border-bottom-right-radius: 60px;
+}
+
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*Acá comienza la edición del FOOTER*/
+
+
+
+footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "news PreguntasFrecuentes datos";
+}
+
+footer .news {
+  box-sizing: border-box;
+  width: 100%;
+  border: solid rgb(235, 238, 235) 5px;
+  border-radius: 1rem;
+  padding: 5px;
+  grid-area: news;
+}
+
+footer .preguntasFrecuentes {
+  box-sizing: border-box;
+  width: 100%;
+  border: solid rgb(235, 238, 235) 5px;
+  border-radius: 1rem;
+  padding: 5px;
+}
+
+footer .preguntasFrecuentes .preguntasFrecuentes__1 a  {
+  color: rgb(235, 238, 235);
+}
+
+footer .preguntasFrecuentes .preguntasFrecuentes__2 a  {
+  color: rgb(235, 238, 235);
+}
+
+footer .preguntasFrecuentes li {
+  list-style: none;
+}
+
+footer .preguntasFrecuentes li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+footer .datos {
+  box-sizing: border-box;
+  width: 100%;
+  border: solid rgb(235, 238, 235) 5px;
+  border-radius: 1rem;
+  padding: 5px;
+}
+
+footer .datos li {
+  list-style: none;
+}
+
+.enviar {
+  color: black;
+  width: 55px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+footer .news h4 {
+  font-size: 12px;
+}
+
+footer .news:not(h4) {
+  font-size: 10px;
+}
+
+footer .preguntasFrecuentes h4 {
+  font-size: 12px;
+}
+
+footer .preguntasFrecuentes__1{
+  font-size: 10px;
+}
+
+footer .preguntasFrecuentes__2{
+  font-size: 10px;
+}
+
+footer .datos ul li {
+  font-size: 10px;
+}
+
+.iconoEmailDos {
+  width: 24px;
+  height: 24px;
+} 
+.iconoInstagramDos {
+  width: 24px;
+  height: 24px;
+}
+.iconoFacebookDos {
+  width: 24px;
+  height: 24px;
+}
+
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/*VISTA MOBILE*/
+/**Acá comienza la edición de raquets.html**/
+
+.grid-containerRaquetas h4 {
+  font-size: 9px;
+}
+
+.grid-containerRaquetas h5 {
+  font-size: 7px;
+}
+
+.raquetasVistaMobile {
+  width: 75px;
+  height: 174px;
 }
 
 
