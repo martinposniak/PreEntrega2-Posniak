@@ -8,9 +8,7 @@
 
 
 body {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../assets/img/fondo-de-pantalla.jpg);
-  background-size: 1366px 2629px;
-
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
 }
 
 
@@ -18,318 +16,40 @@ body {
 
 /*ACÁ ES COMIENZA EL ARMADO DEL HEADER Y EL NAVBAR CON FLEXBOX*/
 
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-evenly;
-  gap: 10px;
-  background-color: rgb(0, 128, 0);
-}
-
-.nav-bar-a {
-  font-size: 14px;
-  text-align: center;
-}
 
 
-.nav-bar a {
-  line-height: 1cm;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
 
-.nav-bar .logo img {
-    width: 120px;
-    height: 41px;
+
+.menu {
+  width:100%;
+  font-size: 1rem;
+  margin: auto;
+  padding: 10px;
+  background: linear-gradient(rgb(224, 209, 126), rgb(0, 0, 0));
+  color: #F4ECDC;
 }
 
 
 /*ACÁ COMIENZA PARA EL INDEX LA COLOCACIÓN DE LAS FOTOS DE LOS JUGADORES HECHO CON FLEXBOX Y ANIMACIONES*/
 /*ACÁ CORRESPONDE A LA ANIMACIÓN FOTO DE DJOKOVIC*/
 
-.container {
+.container-fluid {
   display: flex;
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.animated1 {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  animation-delay: 0.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+.carouselPrincipal {
+  display: flex;
+  justify-content: center;
 }
 
-
-.djokovic {
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
+.carousel-item {
+  width: 82.81rem;
+  height: 32rem;
 }
 
-
-
-@-webkit-keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-
-/*ACÁ CORRESPONDE A LA ANIMACIÓN FOTO DE NADAL*/
-.animated2 {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  animation-delay: 1.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-
-.nadal {
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
-
-@-webkit-keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-
-
-/*ACÁ CORRESPONDE A LA ANIMACIÓN FOTO DE FEDERER*/
-.animated3 {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  animation-delay: 2.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-
-.federer {
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
-
-@-webkit-keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-
-
-/*ACÁ CORRESPONDE A LA ANIMACIÓN FOTO DE MURRAY*/
-
-.animated4 {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  animation-delay: 3.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-
-.murray {
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
-
-@-webkit-keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-
-
-
-/*ACÁ CORRESPONDE AL PÁRRAFO DE DEL POTRO*/
-
-.videoBigFour {
-  width: 700px;
-  height: 300px;
-  align-self: center;
-}
-
-.parrafo {
-  width: 700px;
-
-}
-
-.parrafo section {
-  height: 213px;
-  font-size: 1rem;
-  text-align: center;
-
-}
-
-.animated5 {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  animation-delay: 4.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-
-.delPotro {
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
-
-@-webkit-keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0., 0., 0.);
-    transform: scale3d(0., 0., 0.);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0., 0., 0.);
-    transform: scale3d(0., 0., 0.);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-
-/*ACÁ CORRESPONDE AL PÁRRAFO DE HOMENAJE*/
-
-.animated6 {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  animation-delay: 4.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-
-.homenaje {
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
-
-@-webkit-keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0., 0., 0.);
-    transform: scale3d(0., 0., 0.);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0., 0., 0.);
-    transform: scale3d(0., 0., 0.);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
 
 
 
@@ -341,9 +61,36 @@ body {
   justify-content: center;
 }
 
+.titulo-productos h2 {
+margin-top: 7rem;
+}
+
 .section-principal {
   display: flex;
+  justify-content: center;
+  margin-top: 7rem;
 }
+
+.marcaPicture img {
+display: flex;
+width: 31.18rem;
+height: 18.5rem;
+}
+
+.titulo-brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.marca {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+} 
+
+
+
 
 .container-todoslosproductos {
     display: flex;
@@ -1448,6 +1195,7 @@ footer .datos li {
     }
 /*ACA MODIFIQUÉ EL TAMAÑO DEL TEXTO DEL MAIN DEL index.html*/
 
+
 .section-principal p {
   font-size: 12px; 
 }
@@ -1459,27 +1207,6 @@ footer .datos li {
 
 
 /*Acá corresponde a los tamaños que tendrán las fotos de los jugadores para vista tablet (768px)*/
-.fotoDjokovic {
-  width: 142px;
-  height: 213px;
-}
-.fotoNadal {
-  width: 152.5px;
-  height: 213px;
-}
-.fotoFederer {
-  width: 119.5px;
-  height: 213px;
-}
-.fotoMurray {
-  width: 170.5px;
-  height: 213px;
-}
-
-.fotoDelpotro {
-  width: 98.5px;
-  height: 212px;
-}
 
 /*VISTA TABLET*/
 /*VISTA TABLET*/
@@ -1688,28 +1415,7 @@ font-size: 12px;
     color: rgb(255, 255, 255);
   }
 
-  .fotoDjokovic {
-    width: 113px;
-    height: 169px;
-  }
-  .fotoNadal {
-    width: 113px;
-    height: 157px;
-  }
-  .fotoFederer {
-    width: 113px;
-    height: 201px;
-  }
-  .fotoMurray {
-    width: 113px;
-    height: 141px;
-  }
-  
-  .fotoDelpotro {
-    width: 113px;
-    height: 267px;
-  }
-  
+
   
 /*VISTA MOBILE*/
 /*VISTA MOBILE*/
@@ -1980,215 +1686,4 @@ footer .datos ul li {
   height: 174px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

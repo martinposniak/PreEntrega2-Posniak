@@ -5,54 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="nav-bar">
-            <a class="logo" href="./index.html"><img src="./assets/img/logo-de-prueba-match-point-palermo.jpg" alt=""></a>
-            <a class="nav-bar-a" href="./pages/raquets.html">RAQUETAS</a>
-            <a class="nav-bar-a" href="./pages/shoes.html">ZAPATILLAS</a>
-            <a class="nav-bar-a" href="./pages/clothes.html">INDUMENTARIA</a>
-            <a class="nav-bar-a" href="./pages/balls.html">PELOTAS</a>            
-        </nav>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark menu">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">Match Point Palermo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./pages/raquets.html">Raquetas</a></li>
+                      <li><a class="dropdown-item" href="./pages/shoes.html">Zapatillas</a></li>
+                      <li><a class="dropdown-item" href="./pages/clothes.html">Indumentaria</a></li>
+                      <li><a class="dropdown-item" href="./pages/balls.html">Pelotas</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
-    <section class="container">
-        <div class="animated1 djokovic">
-            <img class="fotoDjokovic" src="./assets/img/novak-djokovic-australian-open-2022-grand-slam-covid.jpg" alt="">
-        </div>
-        <div class="animated2 nadal">
-            <img class="fotoNadal" src="./assets/img/nadal-roland-garros-champion-2018.jpg" alt="">
-        </div>
-        <div class="animated3 federer">
-            <img class="fotoFederer" src="./assets/img/federer-wimbledon-2005.jpg" alt="">
-        </div>
-        <div class="animated4 murray">
-            <img class="fotoMurray" src="./assets/img/murray-us-open-champion-2012.jpg" alt="">
-        </div>
-        <div class="animated5 delPotro">
-            <img class="fotoDelpotro" src="./assets/img/del-potro-holding-up-trophy.jpg" alt="">
-        </div>        
-        <div class="animated6 homenaje">
-            <div class="parrafo">
-           <section>EN HOMENAJE A LOS MEJORES JUGADORES DEL SIGLO</section> 
-            <iframe class="videoBigFour" width="853" height="480" src="https://www.youtube.com/embed/ccluSk0ay5c" title="TENNIS BIG FOUR BEST POINTS IN GRAND SLAM TOURNAMENTS..[FEDERER,NADAL,DJOKOVIC,MURRAY]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           </div>
-          
-        </div>
+    <section class="container-fluid carouselPrincipal">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/djokovic-carrousel.jpg" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/thiem-carrousel.jpg" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/babolat-bag-carrousel.jpg" class="d-block" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
+    
     <main>
-        <section class="section-principal">
+        <section class="container-fluid section-principal">
+          <section class="container-fluid titulo-brand">
+            <h2>NOSOTROS</h2>
+          </section>
             <article>
                 <div class="marca">
-                <p>
-                    Match Point Palermo es una marca registrada, hace 30 años cuando comenzamos respondiendo a la demanda de los clubs más importantes de la ciudad y cumpliendo con las expectativas de tenistas de distintas edades y categorías.Lo imprescindible es un servicio eficiente hacia nuestros clientes siendo una marca registrada que se extiende a una amplia gama de indumentaria para el disfrute del tenis, como actividad lúdica y deportiva. Actualmente contamos con un equipo de trabajo que se identifica con su labor, ya que todos juegan tenis y comprenden las exigencias de nuestros clientes.
-                </p>
-                </div>
+                    Match Point Palermo es una marca registrada, hace 30 años cuando comenzamos respondiendo a la demanda de los clubs más importantes de la ciudad y cumpliendo con las expectativas de tenistas de distintas edades y categorías.Lo imprescindible es un servicio eficiente hacia nuestros clientes siendo una marca registrada que se extiende a una amplia gama de indumentaria para el disfrute del tenis, como actividad lúdica y deportiva. Actualmente contamos con un equipo de trabajo que se identifica con su labor, ya que todos juegan tenis y comprenden las exigencias de nuestros clientes
+                  <div class="container-fluid marcaPicture"><img src="./assets/img/fondo-parrafo-main-index.jpg"></div></div>
             </article>
         </section>
-        <section class="titulo-productos">
+        <section class="containder-fluid titulo-productos">
             <h2>PRODUCTOS</h2>
         </section>
         <section class="container-todoslosproductos">
@@ -149,6 +182,8 @@
                 </li> 
             </ul>
         </section>
-    </footer>           
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>           
 </body>
 </html>
