@@ -767,7 +767,9 @@ body {
 
 .botonEnviar {
   align-self: center;
+  text-align: center;
   color: black;
+  background-color: white;
   border-radius: 0.3125rem;
   width: 5rem;
   font-size: 1rem;
@@ -837,9 +839,11 @@ footer .datos li {
 
 form .enviar {
   color: black;
+  background-color: white;
   width: 3.75rem;
   font-size: 0.75rem;
-  border-radius: 5px; }
+  border-radius: 5px;
+  text-align: center; }
 
 @media (max-width: 992px) {
   /*Acá comienza la edición de index.html para vista desktop*/
