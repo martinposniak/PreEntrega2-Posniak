@@ -1,0 +1,194 @@
+@media(max-width:576px) {
+    /*Acá comienza la edición de index.html para vista mobile*/
+    .container-fluid .navbar-brand {
+      font-size: 0.7rem;
+    }
+    .titulo-brand h2 {
+        font-size: 0.5rem;
+    }
+    .marca p {
+        width: 12.56rem;
+        font-size: 0.45rem;
+    }
+    .titulo-productos h2 {
+        font-size: 0.5rem;
+    }
+    .vistaMobileProductos {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    .todoslosproductos h4 {
+      font-size: 0.35rem;
+  }
+    /*Acá comienza la edición de la sección 'contacto' y del formulario para vista mobile*/
+    .contactoTitulo h2 {
+        font-size: 0.5rem;
+    }
+    .contacto {
+        flex-direction: column;
+        align-content: center;
+    }
+    .contactoTexto {
+        width: 15rem;
+    }
+    .contactoTexto h3 {
+        font-size: 0.5rem;
+    }
+    .contactoTexto p {
+        font-size: 0.5rem;
+    }
+    .contactoTexto ul {
+        font-size: 0.5rem;
+    }
+    .contactForm form {
+        align-content: center;
+    }
+    .flexStart1 {
+        align-self: center;
+    }
+    .flexStart2 {
+        align-self: center;
+    }
+    .vistaMobileEmail { 
+        width: 1rem;
+        height: 1rem;   
+    }  
+    .vistaMobileInstagram {
+        width: 1rem;
+        height: 1rem;
+    }
+    .vistaMobileFacebook {
+        width: 1rem;
+        height: 1rem;
+    }
+    /*Acá comienza la edición del footer para vista mobile*/
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "news"
+        "PreguntasFrecuentes"
+        "datos";
+    }
+    .iconoEmailDos {
+        width: 1rem;
+        height: 1rem;
+      } 
+      .iconoInstagramDos {
+        width: 1rem;
+        height: 1rem;
+      }
+      .iconoFacebookDos {
+        width: 1rem;
+        height: 1rem;
+      } 
+    /**Acá comienza la edición de raquets.html para vista mobile**/
+   
+    .titulo-raquetas h2 {
+        font-size: 0.5rem;
+      }
+      .raquetasVistaMobile {
+        width: 1.5625rem;
+        height: 3.625rem;
+      }   
+      .raque h4 {
+        font-size: 0.45rem;
+      }
+      .raque h5 span {
+        font-size: 0.45rem;
+      }
+      .comoElegirRaquetaDeTenis h3 {
+        margin-left: 1.09375rem;
+        font-size: 0.5rem;
+      }
+      .comoElegirRaquetaDeTenisParrafoBlock {
+        width: 15rem;
+        height: 3.5rem;
+        line-height: 0.8rem;
+        margin-left: 1.09375rem;
+        font-size: 0.5rem; 
+      }
+      .comoElegirRaquetaDeTenisTips li {
+        width: 15rem;
+        margin-left: 0.1rem;
+        line-height: 0.8rem;
+        padding-left: 0rem;
+        font-size: 0.5rem;
+      }
+      .comoElegirRaquetaDeTenisTipsDosParrafo p {
+        width: 12.5rem;
+      }
+      .comoElegirRaquetaDeTenisTipsDos h3 {
+        margin-left: 1.09375rem;
+        font-size: 0.5rem;
+      }
+      .comoElegirRaquetaDeTenisTipsDosParrafo p {
+        line-height: 0.8rem;
+        margin-left: 0.09375rem;
+        font-size: 0.5rem; 
+      }
+      .comoElegirRaquetaDeTenisTipsDosParrafoBlock {
+        width: 9rem;
+        height: 9.5rem;
+        margin-left: 1.09375rem;
+      }
+      .comoElegirRaquetaDeTenisTipsDosParrafoBlock p {
+        font-size: 0.5rem;
+        line-height: 0.8rem;
+      }
+      .perfilesDeRaquetasParrafosBlock {
+        width: 12rem;
+        margin-left: 1.09375rem;
+        font-size: 0.7rem;
+      } 
+    .fotoRaquetaTips img {
+        display: none;
+    }
+     /**Acá comienza la edición de shoes.html para vista mobile**/
+     .titulo-zapatillas h2 {
+        font-size: 0.5rem;
+     }
+     .shoes h4 {
+        font-size: 0.45rem;
+      } 
+      .shoes h5 span {
+        font-size: 0.45rem;
+      }
+     .vistaMobileShoes {
+        width: 3.75rem;
+        height: 2.8125rem;
+      }
+      /**Acá comienza la edición de clothes.html para vista mobile**/
+      .titulo-clothes h2 {
+        margin-top: 0.5rem;
+        font-size: 0.5rem;
+       }
+       .clothes h4 {
+        line-height: 0.35rem;
+        margin-top: 0.5rem;
+        font-size: 0.35rem;
+       }
+       .clothes h5 span {
+        line-height: 0rem;
+        font-size: 0.35rem;
+       }
+       .vistaMobileClothes {
+        width: 3.75rem;
+        height: 5rem;
+       }
+       /**Acá comienza la edición de balls.html para vista desktop**/
+       .titulo-pelotas h2 {
+        margin-top: 0.5rem;
+        font-size: 0.5rem;
+       }
+       .pelotas h4 {
+        font-size: 0.35rem;
+       }
+       .pelotas h5 span {
+        font-size: 0.35rem;
+       }
+       .vistaMobileBalls {
+        width: 3.12rem;
+        height: 3.12rem;
+       }  
+}

@@ -1,0 +1,50 @@
+.titulo-brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .titulo-brand h2 {
+    margin-top: 5rem;
+  }
+    
+.section-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0.8rem;
+  }
+
+.marca {
+    @include props-flex;
+  } 
+
+  .marca p {
+    width: 15.56rem;
+    font-size: 0.9rem;
+  }
+  
+.marcaPicture img {
+    display: flex;
+    flex-direction: row;
+  }
+  
+.titulo-productos {
+    display: flex;
+    justify-content: center;
+  }
+  
+.titulo-productos h2 {
+    margin-top: 5rem;
+  }
+  
+  
+.todoslosproductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content: center;
+    text-align: center;
+  }
+

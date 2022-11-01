@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Principal</title>
+    <title>Match Point Palermo - Raquetas, Zapatillas, Indumentaria, Pelotas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/img/tennis.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <meta name="description" content="MatchPointPalermo, local de tenis mas grande Latinoamerica">
 </head>
 <body>
-    <header class="container-fluid">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark menu">
             <div class="container-fluid">
               <a class="navbar-brand" href="./index.html">Match Point Palermo</a>
@@ -20,10 +22,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Nosotros</a>
+                    <a class="nav-link" href="index.html#nosotros">Nosotros</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,7 +38,7 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled">Contacto</a>
+                    <a class="nav-link" href="index.html#contacto">Contacto</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -50,17 +49,18 @@
             </div>
           </nav>
     </header>
-    <section class="container-fluid carouselPrincipal">
+    <main>
+      <section class="container carouselPrincipal">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./assets/img/djokovic-carrousel.jpg" class="d-block" alt="...">
+                <img src="./assets/img/djokovic-carrousel.jpg" class="d-block w-100" alt="djokovic">
               </div>
               <div class="carousel-item">
-                <img src="./assets/img/thiem-carrousel.jpg" class="d-block" alt="...">
+                <img src="./assets/img/thiem-carousel.jpg" class="d-block w-100" alt="thiem">
               </div>
               <div class="carousel-item">
-                <img src="./assets/img/babolat-bag-carrousel.jpg" class="d-block" alt="...">
+                <img src="./assets/img/babolat-bag-carrousel.jpg" class="d-block w-100" alt="babolat">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -73,48 +73,47 @@
             </button>
           </div>
     </section>
-    
-    <main>
-        <section class="container-fluid section-principal">
-          <section class="container-fluid titulo-brand">
-            <h2>NOSOTROS</h2>
-          </section>
+    <section class="titulo-brand" id="nosotros">
+      <h2>NOSOTROS</h2>
+    </section>
+        <section class="section-principal">
+          <section class="">
             <article>
                 <div class="marca">
-                    Match Point Palermo es una marca registrada, hace 30 años cuando comenzamos respondiendo a la demanda de los clubs más importantes de la ciudad y cumpliendo con las expectativas de tenistas de distintas edades y categorías.Lo imprescindible es un servicio eficiente hacia nuestros clientes siendo una marca registrada que se extiende a una amplia gama de indumentaria para el disfrute del tenis, como actividad lúdica y deportiva. Actualmente contamos con un equipo de trabajo que se identifica con su labor, ya que todos juegan tenis y comprenden las exigencias de nuestros clientes
-                  <div class="container-fluid marcaPicture"><img src="./assets/img/fondo-parrafo-main-index.jpg"></div></div>
+                   <p>El local de tenis mas grande de Latinoamerica. Match Point Palermo es una marca registrada, hace 30 años cuando comenzamos respondiendo a la demanda de los clubs más importantes de la ciudad y cumpliendo con las expectativas de tenistas de distintas edades y categorías.Lo imprescindible es un servicio eficiente hacia nuestros clientes siendo una marca registrada que se extiende a una amplia gama de indumentaria para el disfrute del tenis, como actividad lúdica y deportiva. Actualmente contamos con un equipo de trabajo que se identifica con su labor, ya que todos juegan tenis y comprenden las exigencias de nuestros clientes.</p>
+                  <div class="marcaPicture"><img src="./assets/img/fondo-parrafo-main-index.jpg" alt="fondo"></div></div>
             </article>
         </section>
-        <section class="containder-fluid titulo-productos">
+        </section>
+        <section class="titulo-productos">
             <h2>PRODUCTOS</h2>
         </section>
-        <section class="container-todoslosproductos">
+        <section class="todoslosproductos">
             <div class="box box-raquetaBabolat">
-                <img class="vistaMobileProductos" src="./assets/img/raqueta-babolat-sin-background.png" alt=""><h4>RAQUETAS</h4>
+                <img class="vistaMobileProductos" src="./assets/img/raqueta-babolat-sin-background.png" alt="raqueta babolat"><h4>RAQUETAS</h4>
             </div>
             <div class="box box-zapatillaAdidas">
-                <img class="vistaMobileProductos" src="./assets/img/zapatilla-adidas-sin-background.png" alt=""><h4>ZAPATILLAS</h4>
+                <img class="vistaMobileProductos" src="./assets/img/zapatilla-adidas-sin-background.png" alt="zapatilla adidas"><h4>ZAPATILLAS</h4>
             </div>
             <div class="box box-indumentariaRemeraAdidas">
-                <img class="vistaMobileProductos" src="./assets/img/remera-adidas-sin-background.png" alt=""><h4>INDUMENTARIA</h4>
+                <img class="vistaMobileProductos" src="./assets/img/remera-adidas-sin-background.png" alt="remera adidas"><h4>INDUMENTARIA</h4>
             </div>
             <div class="box box-pelotasDunlop">
-                <img class="vistaMobileProductos" src="./assets/img/pelotas-dunlop-sin-background.png" alt=""><h4>PELOTAS</h4>
+                <img class="vistaMobileProductos" src="./assets/img/pelotas-dunlop-sin-background.png" alt="pelotas dunlop"><h4>PELOTAS</h4>
             </div>
         </section>
         <hr>
-        <section class="contactoTitulo">
+        <section class="contactoTitulo" id="contacto">
             <h2>CONTACTO</h2>
-            <br>
            </section>
            <section class="contacto">
             <section class="contactoTexto">
                 <h3>¿Como nos contactan?</h3>
                 <p>La forma más rápida es mandarnos un mensaje directo de Instagram, o por mail a matchpointpalermo@gmail.com. Respondemos lo más rápido posible.</p>
                 <ul>
-                    <li><img class="vistaMobileEmail" src="./assets/img/email2-blanco.png"> matchpointpalermo@gmail.com</li>
-                    <li><img class="vistaMobileInstagram" src="./assets/img/instagram2-blanco.png"> @matchpointpalermo</li>
-                    <li><img class="vistaMobileFacebook" src="./assets/img/facebook2-blanco.png"> matchpointpalermo</li>
+                    <li><img class="vistaMobileEmail" src="./assets/img/email2-blanco.png" alt="icono email"> matchpointpalermo@gmail.com</li>
+                    <li><img class="vistaMobileInstagram" src="./assets/img/instagram2-blanco.png" alt="icono instagram"> @matchpointpalermo</li>
+                    <li><img class="vistaMobileFacebook" src="./assets/img/facebook2-blanco.png" alt="icono facebook"> matchpointpalermo</li>
                 </ul>
             </section>
             <section class="contactForm">
@@ -148,7 +147,7 @@
     <footer>
         <section class="news">
             <h4>Newsletter</h4>
-            "Sucribite para recibir todas las novedades!"
+           <p>"Sucribite para recibir todas las novedades!"</p>
             <div>
                 <form>
                     <label class="newsletterform_margin" for="nombre"></label>
@@ -173,10 +172,10 @@
         <section class="datos">
             <h4>Datos de contacto</h4>
             <ul>
-                <li><img class="iconoEmailDos" src="./assets/img/email2-blanco.png"> matchpointpalermo@gmail.com</li> <!--Aca va la dirección de mail del local de tenis y un icono de email-->
-                <li><a href=""><img class="iconoInstagramDos" src="./assets/img/instagram2-blanco.png"></a> @matchpointpalermo</li> <!--Aca iria el perfil comercial de instagram y el icono de ig-->
+                <li><img class="iconoEmailDos" src="./assets/img/email2-blanco.png" alt="icono pie email"> matchpointpalermo@gmail.com</li> <!--Aca va la dirección de mail del local de tenis y un icono de email-->
+                <li><a href=""><img class="iconoInstagramDos" src="./assets/img/instagram2-blanco.png" alt="icono pie instagram"></a> @matchpointpalermo</li> <!--Aca iria el perfil comercial de instagram y el icono de ig-->
                 <li><a href=""><!--Aca iría la fanpage de facebook-->
-                    <img class="iconoFacebookDos" src="./assets/img/facebook2-blanco.png"><!--Acá iría el icono de facebook-->
+                    <img class="iconoFacebookDos" src="./assets/img/facebook2-blanco.png" alt="icono pie facebook"><!--Acá iría el icono de facebook-->
                 </a>
                 Matchpointpalermo 
                 </li> 

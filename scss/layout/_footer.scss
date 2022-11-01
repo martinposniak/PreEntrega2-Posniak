@@ -1,0 +1,61 @@
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "news PreguntasFrecuentes datos";
+  }
+  
+  footer .news {
+    box-sizing: border-box;
+    width: 100%;
+    border: solid rgb(235, 238, 235) 5px;
+    border-radius: 1rem;
+    padding: 5px;
+    grid-area: news;
+  }
+  
+  footer .preguntasFrecuentes {
+    box-sizing: border-box;
+    width: 100%;
+    border: solid rgb(235, 238, 235) 5px;
+    border-radius: 1rem;
+    padding: 5px;
+  }
+  
+  footer .preguntasFrecuentes .preguntasFrecuentes__1 a  {
+    color: rgb(235, 238, 235);
+  }
+  
+  footer .preguntasFrecuentes .preguntasFrecuentes__2 a  {
+    color: rgb(235, 238, 235);
+  }
+  
+  footer .preguntasFrecuentes li {
+    list-style: none;
+  }
+  
+  footer .preguntasFrecuentes li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  footer .datos {
+    box-sizing: border-box;
+    width: 100%;
+    border: solid rgb(235, 238, 235) 5px;
+    border-radius: 1rem;
+    padding: 5px;
+  }
+  
+  footer .datos li {
+    list-style: none;
+  }
+  
+  form .enviar {
+    color: black;
+    width: 3.75rem;
+    font-size: 0.75rem;
+    border-radius: 5px;
+  }
+  

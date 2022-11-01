@@ -1,0 +1,222 @@
+/**Acá comienza la edición de balls.html**/
+
+/*Acá comienza la edición del main,  dentro del cual hay partes hechas con GRIDS y FLEXBOX*/
+
+
+.titulo-pelotas h2 {
+    text-align: center;
+  }
+  
+  .grid-containerPelotas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "pelotas-modeloUno pelotas-modeloDos pelotas-modeloTres pelotas-modeloCuatro"
+    ;
+    justify-items: center;
+  }
+
+  .pelotas h4 {
+    font-size: 0.9rem;
+  }
+  
+  .pelotas h5 span {
+    font-size: 0.8rem;
+    color: rgb(255, 0, 0);
+  }
+  .vistaMobileBalls {
+    width: 8.75rem;
+    height: 8.75rem;
+  }
+  
+  .pelotas {
+    text-align: center;
+  }
+  
+  .pelotas-modeloUno {
+    grid-area: pelotas-modeloUno;
+  }
+  .pelotas-modeloDos {
+    grid-area: pelotas-modeloDos;
+  }
+  .pelotas-modeloTres {
+    grid-area: pelotas-modeloTres;
+  }
+  .pelotas-modeloCuatro {
+    grid-area: pelotas-modeloCuatro;
+  }
+  
+  
+  /**Acá le agregué una animación a los 4 productos de balls.html**/
+  
+  /*Acá le agregué animación al modelo 1*/
+  
+  .pelotas1 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  
+  .pelotas-modeloUno {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+  
+  
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  
+  /*Acá le agregué animación al modelo 2*/
+  
+  .pelotas2 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  
+  .pelotas-modeloDos {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+  
+  
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  
+  /*Acá le agregué animación al modelo 3*/
+  
+  .pelotas3 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  
+  .pelotas-modeloTres {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+  
+  
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  
+  /*Acá le agregué animación al modelo 4*/
+  .pelotas4 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  
+  .pelotas-modeloCuatro {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+  
+  
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  

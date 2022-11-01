@@ -1,182 +1,141 @@
+@charset "UTF-8";
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Oxygen', sans-serif;
-    color: rgb(255, 255, 255);
-}
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Oxygen', sans-serif;
+  color: white; }
 
+.menu {
+  width: 100%;
+  font-size: 1rem;
+  background: linear-gradient(#e0d17e, black);
+  color: #F4ECDC; }
 
 body {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
-}
-
-
-
-
-/*ACÁ ES COMIENZA EL ARMADO DEL HEADER Y EL NAVBAR CON FLEXBOX*/
-
-
-
-
-
-.menu {
-  width:100%;
-  font-size: 1rem;
-  margin: auto;
-  padding: 10px;
-  background: linear-gradient(rgb(224, 209, 126), rgb(0, 0, 0));
-  color: #F4ECDC;
-}
-
-
-/*ACÁ COMIENZA PARA EL INDEX LA COLOCACIÓN DE LAS FOTOS DE LOS JUGADORES HECHO CON FLEXBOX Y ANIMACIONES*/
-/*ACÁ CORRESPONDE A LA ANIMACIÓN FOTO DE DJOKOVIC*/
-
-.container-fluid {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.carouselPrincipal {
-  display: flex;
-  justify-content: center;
-}
-
-.carousel-item {
-  width: 82.81rem;
-  height: 32rem;
-}
-
-
-
-
-
-/*Acá comienza la edición del MAIN del index.html*/
-
-.titulo-productos {
-  display: flex;
-  justify-content: center;
-}
-
-.titulo-productos h2 {
-margin-top: 7rem;
-}
-
-.section-principal {
-  display: flex;
-  justify-content: center;
-  margin-top: 7rem;
-}
-
-.marcaPicture img {
-display: flex;
-width: 31.18rem;
-height: 18.5rem;
-}
+  background-repeat: no-repeat; }
 
 .titulo-brand {
   display: flex;
   flex-direction: row;
+  justify-content: center; }
+
+.titulo-brand h2 {
+  margin-top: 5rem; }
+
+.section-principal {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-}
+  margin-top: 0.8rem; }
 
 .marca {
   display: flex;
   flex-direction: row;
-  font-size: 1.2rem;
-} 
+  justify-content: center; }
 
+.marca p {
+  width: 15.56rem;
+  font-size: 0.9rem; }
 
+.marcaPicture img {
+  display: flex;
+  flex-direction: row; }
 
+.titulo-productos {
+  display: flex;
+  justify-content: center; }
 
-.container-todoslosproductos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-    text-align: center;
-}
+.titulo-productos h2 {
+  margin-top: 5rem; }
+
+.todoslosproductos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center; }
 
 /**Acá comienza la edición de raquets.html**/
-
 /*Acá comienza la edición del main, dentro del cual hay partes hechas con GRIDS y FLEXBOX*/
-
 .titulo-raquetas h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
-}
+  margin-top: 1rem; }
 
 .grid-containerRaquetas {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  grid-template-areas: 
-  "raque-modeloUno raque-modeloDos raque-modeloTres raque-modeloCuatro"
-  ;
+  grid-template-areas: "raque-modeloUno raque-modeloDos raque-modeloTres raque-modeloCuatro";
   justify-items: center;
-  width: 100%;
-}
+  width: 100%; }
+
+.raque h4 {
+  font-size: 0.9rem; }
 
 .raque h5 span {
-  color: rgb(255, 0, 0);
-}
+  color: red;
+  font-size: 0.8rem; }
 
 .raque {
-  text-align: center;
-}
+  text-align: center; }
 
 .raque-modeloUno {
-  grid-area: raque-modeloUno;
-}
+  grid-area: raque-modeloUno; }
+
 .raque-modeloDos {
-  grid-area: raque-modeloDos;
-}
+  grid-area: raque-modeloDos; }
+
 .raque-modeloTres {
-  grid-area: raque-modeloTres;
-}
+  grid-area: raque-modeloTres; }
+
 .raque-modeloCuatro {
-  grid-area: raque-modeloCuatro;
-}
+  grid-area: raque-modeloCuatro; }
 
 /*Acá comienza la edición para la sección de tips para elegir una raqueta de tenis*/
-
 .comoElegirRaquetaDeTenis {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-start;
   align-items: flex-start;
-  width: 100%;
-}
-
+  width: 100%; }
 
 .comoElegirRaquetaDeTenis h3 {
-  margin-left: 35px;  
-}
+  margin-left: 2.1875rem; }
 
-.comoElegirRaquetaDeTenis p {
- line-height: 3cm;
- margin-left: 35px;
-}
+.comoElegirRaquetaDeTenisParrafoBlock {
+  display: block;
+  line-height: 1cm;
+  margin-left: 4.0625rem;
+  font-size: 0.9rem;
+  width: 55rem;
+  height: 7.5rem; }
+
+.comoElegirRaquetaDeTenisTipsDosParrafoBlock {
+  width: 55rem;
+  height: 10.5rem;
+  margin-left: 4.0625rem; }
 
 .comoElegirRaquetaDeTenisTips li {
- margin-left: 65px;
- padding-left: 25px;
- line-height: 0.8cm;
-}
+  margin-left: 4.0625rem;
+  padding-left: 1.5625rem;
+  line-height: 0.8cm;
+  font-size: 0.9rem; }
 
 .comoElegirRaquetaDeTenisTipsDos {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
-}
+  width: 100%; }
+
+.comoElegirRaquetaDeTenisTipsDos h3 {
+  margin-top: 1rem; }
 
 .comoElegirRaquetaDeTenisTipsDosParrafo {
   display: flex;
@@ -184,148 +143,107 @@ height: 18.5rem;
   flex-wrap: wrap;
   align-content: flex-start;
   align-items: flex-start;
-  width: 100%;
-}
+  width: 100%; }
 
 .comoElegirRaquetaDeTenisTipsDosParrafo p {
   line-height: 0.8cm;
-  
-}
-
+  font-size: 0.9rem;
+  margin-left: 2.1875rem; }
 
 .comoElegirRaquetaDeTenisTipsDosParrafo .fotoRaquetaTips {
-align-self: center;
-}
+  align-self: center; }
+
+.perfilesDeRaquetasParrafosBlock {
+  display: block;
+  line-height: 1cm;
+  margin-left: 4.0625rem;
+  font-size: 0.9rem;
+  width: 57rem; }
 
 /**Acá le agregué una animación a los 4 productos de raquets.html**/
 /*Acá le agregué animación al modelo 1*/
-
 .raque1 {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   animation-delay: 0.5s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
+  animation-fill-mode: both; }
 
 .raque-modeloUno {
   -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
+  animation-name: zoomIn; }
 
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 
 /*Acá le agregué animación al modelo 2*/
-
 .raque2 {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   animation-delay: 1s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
+  animation-fill-mode: both; }
 
 .raque-modeloDos {
   -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
+  animation-name: zoomIn; }
 
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 
 /*Acá le agregué animación al modelo 3*/
-
 .raque3 {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   animation-delay: 1.5s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
+  animation-fill-mode: both; }
 
 .raque-modeloTres {
   -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
+  animation-name: zoomIn; }
 
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 
 /*Acá le agregué animación al modelo 4*/
 .raque4 {
@@ -333,214 +251,147 @@ align-self: center;
   animation-duration: 3s;
   animation-delay: 2s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
+  animation-fill-mode: both; }
 
 .raque-modeloCuatro {
   -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
+  animation-name: zoomIn; }
 
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
-
-
-
+    opacity: 1; } }
 
 /**Acá comienza la edición de shoes.html**/
-
 /*Acá comienza la edición del main,  dentro del cual hay partes hechas con GRIDS y FLEXBOX*/
-
-
 .titulo-zapatillas h2 {
-  text-align: center;
-}
+  margin-top: 0.5rem;
+  text-align: center; }
 
 .grid-containerShoes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  grid-template-areas: 
-  "shoes-modeloUno shoes-modeloDos shoes-modeloTres shoes-modeloCuatro"
-  ;
-  justify-items: center;
-}
+  grid-template-areas: "shoes-modeloUno shoes-modeloDos shoes-modeloTres shoes-modeloCuatro";
+  justify-items: center; }
+
+.shoes h4 {
+  font-size: 0.9rem; }
 
 .shoes h5 span {
-  color: rgb(255, 0, 0);
-}
+  font-size: 0.8rem;
+  color: red; }
 
 .shoes {
-  text-align: center;
-}
+  text-align: center; }
 
 .shoes-modeloUno {
-  grid-area: shoes-modeloUno;
-}
+  grid-area: shoes-modeloUno; }
+
 .shoes-modeloDos {
-  grid-area: shoes-modeloDos;
-}
+  grid-area: shoes-modeloDos; }
+
 .shoes-modeloTres {
-  grid-area: shoes-modeloTres;
-}
+  grid-area: shoes-modeloTres; }
+
 .shoes-modeloCuatro {
-  grid-area: shoes-modeloCuatro;
-}
+  grid-area: shoes-modeloCuatro; }
 
 /**Acá le agregué una animación a los 4 productos de shoes.html**/
-
 /*Acá le agregué animación al modelo 1*/
-
 .shoes1 {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   animation-delay: 0.5s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
+  animation-fill-mode: both; }
 
 .shoes-modeloUno {
   -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
+  animation-name: zoomIn; }
 
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 
 /*Acá le agregué animación al modelo 2*/
-
 .shoes2 {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   animation-delay: 1s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
+  animation-fill-mode: both; }
 
 .shoes-modeloDos {
   -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
+  animation-name: zoomIn; }
 
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 
 /*Acá le agregué animación al modelo 3*/
-
 .shoes3 {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   animation-delay: 1.5s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
+  animation-fill-mode: both; }
 
 .shoes-modeloTres {
   -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
+  animation-name: zoomIn; }
 
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 
 /*Acá le agregué animación al modelo 4*/
 .shoes4 {
@@ -548,213 +399,146 @@ align-self: center;
   animation-duration: 3s;
   animation-delay: 2s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
+  animation-fill-mode: both; }
 
 .shoes-modeloCuatro {
   -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
+  animation-name: zoomIn; }
 
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 /**Acá comienza la edición de clothes.html**/
-
 /*Acá comienza la edición del main,  dentro del cual hay partes hechas con GRIDS y FLEXBOX*/
-
-
-
 .titulo-clothes h2 {
-  text-align: center;
-}
+  text-align: center; }
 
 .grid-containerClothes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  grid-template-areas: 
-  "clothes-modeloUno clothes-modeloDos clothes-modeloTres clothes-modeloCuatro"
-  ;
-  justify-items: center;
-}
+  grid-template-areas: "clothes-modeloUno clothes-modeloDos clothes-modeloTres clothes-modeloCuatro";
+  justify-items: center; }
+
+.clothes h4 {
+  font-size: 0.9rem; }
 
 .clothes h5 span {
-  color: rgb(255, 0, 0);
-}
+  font-size: 0.8rem;
+  color: red; }
 
 .clothes {
-  text-align: center;
-}
+  text-align: center; }
 
 .clothes-modeloUno {
-  grid-area: clothes-modeloUno;
-}
-.clothes-modeloDos {
-  grid-area: clothes-modeloDos;
-}
-.clothes-modeloTres {
-  grid-area: clothes-modeloTres;
-}
-.clothes-modeloCuatro {
-  grid-area: clothes-modeloCuatro;
-}
+  grid-area: clothes-modeloUno; }
 
+.clothes-modeloDos {
+  grid-area: clothes-modeloDos; }
+
+.clothes-modeloTres {
+  grid-area: clothes-modeloTres; }
+
+.clothes-modeloCuatro {
+  grid-area: clothes-modeloCuatro; }
 
 /**Acá le agregué una animación a los 4 productos de clothes.html**/
-
 /*Acá le agregué animación al modelo 1*/
-
 .clothes1 {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   animation-delay: 0.5s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
+  animation-fill-mode: both; }
 
 .clothes-modeloUno {
   -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
+  animation-name: zoomIn; }
 
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 
 /*Acá le agregué animación al modelo 2*/
-
 .clothes2 {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   animation-delay: 1s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
+  animation-fill-mode: both; }
 
 .clothes-modeloDos {
   -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
+  animation-name: zoomIn; }
 
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 
 /*Acá le agregué animación al modelo 3*/
-
 .clothes3 {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   animation-delay: 1.5s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
+  animation-fill-mode: both; }
 
 .clothes-modeloTres {
   -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
+  animation-name: zoomIn; }
 
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 
 /*Acá le agregué animación al modelo 4*/
 .clothes4 {
@@ -762,212 +546,150 @@ align-self: center;
   animation-duration: 3s;
   animation-delay: 2s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
+  animation-fill-mode: both; }
 
 .clothes-modeloCuatro {
   -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
+  animation-name: zoomIn; }
 
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 /**Acá comienza la edición de balls.html**/
-
 /*Acá comienza la edición del main,  dentro del cual hay partes hechas con GRIDS y FLEXBOX*/
-
-
 .titulo-pelotas h2 {
-  text-align: center;
-}
+  text-align: center; }
 
 .grid-containerPelotas {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  grid-template-areas: 
-  "pelotas-modeloUno pelotas-modeloDos pelotas-modeloTres pelotas-modeloCuatro"
-  ;
-  justify-items: center;
-}
+  grid-template-areas: "pelotas-modeloUno pelotas-modeloDos pelotas-modeloTres pelotas-modeloCuatro";
+  justify-items: center; }
+
+.pelotas h4 {
+  font-size: 0.9rem; }
 
 .pelotas h5 span {
-  color: rgb(255, 0, 0);
-}
+  font-size: 0.8rem;
+  color: red; }
+
+.vistaMobileBalls {
+  width: 8.75rem;
+  height: 8.75rem; }
 
 .pelotas {
-  text-align: center;
-}
+  text-align: center; }
 
 .pelotas-modeloUno {
-  grid-area: pelotas-modeloUno;
-}
-.pelotas-modeloDos {
-  grid-area: pelotas-modeloDos;
-}
-.pelotas-modeloTres {
-  grid-area: pelotas-modeloTres;
-}
-.pelotas-modeloCuatro {
-  grid-area: pelotas-modeloCuatro;
-}
+  grid-area: pelotas-modeloUno; }
 
+.pelotas-modeloDos {
+  grid-area: pelotas-modeloDos; }
+
+.pelotas-modeloTres {
+  grid-area: pelotas-modeloTres; }
+
+.pelotas-modeloCuatro {
+  grid-area: pelotas-modeloCuatro; }
 
 /**Acá le agregué una animación a los 4 productos de balls.html**/
-
 /*Acá le agregué animación al modelo 1*/
-
 .pelotas1 {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   animation-delay: 0.5s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
+  animation-fill-mode: both; }
 
 .pelotas-modeloUno {
   -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
+  animation-name: zoomIn; }
 
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 
 /*Acá le agregué animación al modelo 2*/
-
 .pelotas2 {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   animation-delay: 1s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
+  animation-fill-mode: both; }
 
 .pelotas-modeloDos {
   -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
+  animation-name: zoomIn; }
 
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 
 /*Acá le agregué animación al modelo 3*/
-
 .pelotas3 {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   animation-delay: 1.5s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
+  animation-fill-mode: both; }
 
 .pelotas-modeloTres {
   -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
+  animation-name: zoomIn; }
 
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
-
+    opacity: 1; } }
 
 /*Acá le agregué animación al modelo 4*/
 .pelotas4 {
@@ -975,63 +697,44 @@ align-self: center;
   animation-duration: 3s;
   animation-delay: 2s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
+  animation-fill-mode: both; }
 
 .pelotas-modeloCuatro {
   -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-}
-
-
+  animation-name: zoomIn; }
 
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
+    transform: scale3d(0.3, 0.3, 0.3); }
   50% {
-    opacity: 1;
-  }
-}
-
-
-
-/*Acá comienza la edición del formulario de CONTACTO, hecho con FLEXBOX*/
+    opacity: 1; } }
 
 .contactoTitulo {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .contacto {
   display: flex;
- flex-direction: row;
- flex-wrap: wrap;
-}
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .contactoTexto {
   display: flex;
   flex-direction: column;
-  width: 500px;
-  padding: 10px;
-}
+  width: 31.25rem;
+  padding: 0.625rem; }
 
 .contactoTexto p {
   display: block;
@@ -1040,650 +743,414 @@ align-self: center;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
+  margin-inline-end: 0px; }
 
 .contactoTexto ul {
   margin-bottom: 1rem;
-  padding-left: 2rem;
-}
+  padding-left: 2rem; }
 
 .contactoTexto ul {
-  list-style: none;
-}
+  list-style: none; }
 
 .contactForm form {
   display: flex;
-  flex-direction: column;
-}
-
+  flex-direction: column; }
 
 .contactForm .contactFormNombreApellido {
-  align-self: center;
-}
+  align-self: center; }
 
 .contactForm .contactFormAsuntoEmail {
-  align-self: center;
-}
+  align-self: center; }
 
 .contactForm .textArea {
-  align-self: center;
-}
-
-.textAreaModify {
-  border-bottom-right-radius: 40px;
-  width: 360px;
-  height: 290px;
-}
+  align-self: center; }
 
 .botonEnviar {
   align-self: center;
   color: black;
-  border-radius: 5px;
-  width: 50px;
-  margin-bottom: 10px;
-}
+  border-radius: 0.3125rem;
+  width: 5rem;
+  font-size: 1rem;
+  margin-bottom: 0.625rem; }
 
 .contactFormPartsOne {
-  border-bottom-right-radius: 15px;
-  border-top-left-radius: 15px;
-  width: 180px;
-  height: 50px;
-}
+  border-bottom-right-radius: 0.9375rem;
+  border-top-left-radius: 0.9375rem;
+  width: 11.25rem;
+  height: 3.125rem; }
 
 .contactFormPartsTwo {
-  border-bottom-right-radius: 15px;
-  border-top-left-radius: 15px;
-  width: 180px;
-  height: 50px;
-}
+  border-bottom-right-radius: 0.9375rem;
+  border-top-left-radius: 0.9375rem;
+  width: 11.25rem;
+  height: 3.125rem; }
 
-
-/*Acá comienza la edición del FOOTER*/
-
-
+.textAreaModify {
+  border-bottom-right-radius: 2.5rem;
+  width: 22.5rem;
+  height: 18.125rem; }
 
 footer {
   width: 100%;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  grid-template-areas: "news PreguntasFrecuentes datos";
-}
+  grid-template-areas: "news PreguntasFrecuentes datos"; }
 
 footer .news {
   box-sizing: border-box;
   width: 100%;
-  border: solid rgb(235, 238, 235) 5px;
+  border: solid #ebeeeb 5px;
   border-radius: 1rem;
   padding: 5px;
-  grid-area: news;
-}
+  grid-area: news; }
 
 footer .preguntasFrecuentes {
   box-sizing: border-box;
   width: 100%;
-  border: solid rgb(235, 238, 235) 5px;
+  border: solid #ebeeeb 5px;
   border-radius: 1rem;
-  padding: 5px;
-}
+  padding: 5px; }
 
-footer .preguntasFrecuentes .preguntasFrecuentes__1 a  {
-  color: rgb(235, 238, 235);
-}
+footer .preguntasFrecuentes .preguntasFrecuentes__1 a {
+  color: #ebeeeb; }
 
-footer .preguntasFrecuentes .preguntasFrecuentes__2 a  {
-  color: rgb(235, 238, 235);
-}
+footer .preguntasFrecuentes .preguntasFrecuentes__2 a {
+  color: #ebeeeb; }
 
 footer .preguntasFrecuentes li {
-  list-style: none;
-}
+  list-style: none; }
 
 footer .preguntasFrecuentes li a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
-}
+  color: black; }
 
 footer .datos {
   box-sizing: border-box;
   width: 100%;
-  border: solid rgb(235, 238, 235) 5px;
+  border: solid #ebeeeb 5px;
   border-radius: 1rem;
-  padding: 5px;
-}
+  padding: 5px; }
 
 footer .datos li {
-  list-style: none;
-}
+  list-style: none; }
 
-.enviar {
+form .enviar {
   color: black;
-  width: 55px;
-  height: 25px;
-  border-radius: 5px;
-}
-
-
-  /*Acá declaramos media querie para vista tablet (768px)*/
-  /*Acá declaramos media querie para para el nav-bar*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-  @media (max-width: 768px) {
-    .nav-bar {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      background-color: rgb(0, 128, 0);     
-    }
-
-    .nav-bar-a {
-      font-size: 12px;
-      text-align: center;
-    }
-    
-    
-    .nav-bar a {
-      line-height: 1cm;
-      text-decoration: none;
-      color: rgb(255, 255, 255);
-    }
-/*ACA MODIFIQUÉ EL TAMAÑO DEL TEXTO DEL MAIN DEL index.html*/
-
-
-.section-principal p {
-  font-size: 12px; 
-}
-
-.titulo-productos h2 {
-  font-size: 13px;
-}
- /*Acá declaramos media querie para las fotos de los jugadores del index.html*/
-
-
-/*Acá corresponde a los tamaños que tendrán las fotos de los jugadores para vista tablet (768px)*/
-
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*Acá comienza la edición del MAIN del index.html*/
-
-
-
-.titulo-productos h2 {
-  font-size: 15px;
-}
-
-
-.vistaMobileProductos {
-  width: 100px;
-  height: 100px;
-}
-
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-
-    
-  
-
-/*ACÁ CORRESPONDE AL PÁRRAFO DE DEL POTRO*/
-
-.videoBigFour {
-  width: 350px;
-  height: 150px;
-  align-self: center;
-}
-
-.parrafo {
-  width: 350px;
-
-}
-
-.parrafo section {
-  height: 106.5px;
-  font-size: 1rem;
-  text-align: center;
-
-}
-
-
-
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-
-/*ACA MODIFICAMOS EL TAMAÑO DE LAS IMAGENES DE LAS RAQUETAS DE raquets.html*/
-
-.titulo-raquetas h2 {
-  font-size: 15px;
-}
-
-.grid-containerRaquetas h4 {
-  font-size: 12px;
-}
-
-.grid-containerRaquetas h5 {
-  font-size: 10px;
-}
-
-.comoElegirRaquetaDeTenis p {
-  font-size: 10px;
-}
-
-.comoElegirRaquetaDeTenis h3 {
-  font-size: 12px;
-}
-
-.comoElegirRaquetaDeTenisTips li {
-  font-size: 10px;
-}
-
-.raquetasVistaMobile {
-  width: 100px;
-  height: 232px;
-}
-
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-
-/*ACA BAJAMOS EL LINE-HEIGHT PARA VISTA TABLET*/
-.comoElegirRaquetaDeTenis p { 
-  line-height: 1.5cm;
-  margin-left: 17.5px;
- }
-
- .comoElegirRaquetaDeTenisTips li {
- margin-left: 32.5px;
- padding-left: 12.5px;
- line-height: 0.4cm;
-}
-
- .comoElegirRaquetaDeTenisTipsDosParrafo p {
-  line-height: 0.4cm;
-  
-}
-
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-
-/*ACÁ MODIFICAMOS EL TAMAÑO DEL TITULO DEL FORMULARIO DE CONTACTO PARA VISTA TABLET*/
-
-.contactoTitulo h2 {
-  font-size: 15px;
-}
-
-
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*VISTA TABLET*/
-/*ACÁ MODIFICAMOS EL TAMAÑO DEL TITULO DEL FORMULARIO DE CONTACTO PARA VISTA TABLET*/
-
-.contacto .contactoTexto h3 {
-font-size: 13px;
-}
-
-.contacto .contactoTexto p {
-font-size: 12px;  
-}
- /*ACÁ VAMOS A MODIFICAR TAMAÑO DE LOS ICONOS DE CONTACTO PARA VISTA TABLET*/
-
- .contacto .contactoTexto ul .vistaMobileEmail {
-  width: 28px;
-  height: 28px;
-  }
-  
-  .contacto .contactoTexto ul .vistaMobileInstagram {
-  width: 28px;
-  height: 28px;
-  }
-  
-  .contacto .contactoTexto ul .vistaMobileFacebook {
-   width: 28px;
-   height: 28px; 
-  }
-
-/*ACÁ VAMOS A MODIFICAR TAMAÑO DE LOS ICONOS DEL FOOTER PARA VISTA TABLET*/
-.iconoEmailDos {
-  width: 28px;
-  height: 28px;
-} 
-.iconoInstagramDos {
-  width: 28px;
-  height: 28px;
-}
-.iconoFacebookDos {
-  width: 28px;
-  height: 28px;
-}
-
-}
-
-
-
-
-
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-  /*Acá declaramos media querie para vista mobile (576px)*/
-
-@media(max-width: 576px) {
-
- /*Acá declaramos media querie para para el nav-bar*/
-  .nav-bar-a {
-    font-size: 8px;
-    text-align: center;
-  }
-  
-  
-  .nav-bar a {
-    line-height: 1cm;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-  }
-
-
-  
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-    
-
-  /*ACA MODIFICAMOS EL TAMAÑO DEL FORMULARIO DE CONTACTO*/
-
-.contacto .contactoTexto h3 {
-  font-size: 1rem;
-}
-
-.contacto .contactoTexto p {
-  font-size: 0.8rem;
-}
-
-.contacto .contactoTexto ul li {
-  font-size: 0.8rem;
-}
-
-.contacto .contactoTexto ul .vistaMobileEmail {
-width: 24px;
-height: 24px;
-}
-
-.contacto .contactoTexto ul .vistaMobileInstagram {
-width: 24px;
-height: 24px;
-}
-
-.contacto .contactoTexto ul .vistaMobileFacebook {
- width: 24px;
- height: 24px; 
-}
-
-.textAreaModify {
-  width: 500px;
-  height: 500px;
-}
-
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-
-
-
-
-  
-
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-
-
-/*Acá comienza la edición del MAIN del index.html*/
-
-
-
-.titulo-productos h2 {
-  font-size: 15px;
-}
-
-
-.vistaMobileProductos {
-  width: 100px;
-  height: 100px;
-}
-
-
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*Acá comienza la edición del formulario de CONTACTO, hecho con FLEXBOX*/
-
-
-.contactoTexto ul {
-  margin-bottom: 1rem;
-  padding-left: 2rem;
-}
-
-.contactoTexto ul {
-  list-style: none;
-}
-
-.contactForm form {
-  display: flex;
-  flex-direction: column;
-}
-
-
-.contactForm .contactFormNombreApellido {
-  align-self: center;
-}
-
-.contactForm .contactFormAsuntoEmail {
-  align-self: center;
-}
-
-.contactForm .textArea {
-  align-self: center;
-}
-
-
-.botonEnviar {
-  align-self: center;
-  color: black;
-  border-radius: 5px;
-  width: 50px;
-  margin-bottom: 10px;
-}
-
-.contactFormPartsOne {
-  border-bottom-right-radius: 15px;
-  border-top-left-radius: 15px;
-  width: 155px;
-  height: 25px;
-}
-
-.contactFormPartsTwo {
-  border-bottom-right-radius: 15px;
-  border-top-left-radius: 15px;
-  width: 155px;
-  height: 25px;
-}
-
-.textArea {
-  align-self: flex-start;
-}
-
-.textAreaModify {
-  width: 300px;
-  height: 145px;
-  border-bottom-right-radius: 60px;
-}
-
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*Acá comienza la edición del FOOTER*/
-
-
-
-footer {
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-template-areas: "news PreguntasFrecuentes datos";
-}
-
-footer .news {
-  box-sizing: border-box;
-  width: 100%;
-  border: solid rgb(235, 238, 235) 5px;
-  border-radius: 1rem;
-  padding: 5px;
-  grid-area: news;
-}
-
-footer .preguntasFrecuentes {
-  box-sizing: border-box;
-  width: 100%;
-  border: solid rgb(235, 238, 235) 5px;
-  border-radius: 1rem;
-  padding: 5px;
-}
-
-footer .preguntasFrecuentes .preguntasFrecuentes__1 a  {
-  color: rgb(235, 238, 235);
-}
-
-footer .preguntasFrecuentes .preguntasFrecuentes__2 a  {
-  color: rgb(235, 238, 235);
-}
-
-footer .preguntasFrecuentes li {
-  list-style: none;
-}
-
-footer .preguntasFrecuentes li a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
-footer .datos {
-  box-sizing: border-box;
-  width: 100%;
-  border: solid rgb(235, 238, 235) 5px;
-  border-radius: 1rem;
-  padding: 5px;
-}
-
-footer .datos li {
-  list-style: none;
-}
-
-.enviar {
-  color: black;
-  width: 55px;
-  height: 25px;
-  border-radius: 5px;
-}
-
-footer .news h4 {
-  font-size: 12px;
-}
-
-footer .news:not(h4) {
-  font-size: 10px;
-}
-
-footer .preguntasFrecuentes h4 {
-  font-size: 12px;
-}
-
-footer .preguntasFrecuentes__1{
-  font-size: 10px;
-}
-
-footer .preguntasFrecuentes__2{
-  font-size: 10px;
-}
-
-footer .datos ul li {
-  font-size: 10px;
-}
-
-.iconoEmailDos {
-  width: 24px;
-  height: 24px;
-} 
-.iconoInstagramDos {
-  width: 24px;
-  height: 24px;
-}
-.iconoFacebookDos {
-  width: 24px;
-  height: 24px;
-}
-
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/*VISTA MOBILE*/
-/**Acá comienza la edición de raquets.html**/
-
-.grid-containerRaquetas h4 {
-  font-size: 9px;
-}
-
-.grid-containerRaquetas h5 {
-  font-size: 7px;
-}
-
-.raquetasVistaMobile {
-  width: 75px;
-  height: 174px;
-}
-
-}
+  width: 3.75rem;
+  font-size: 0.75rem;
+  border-radius: 5px; }
+
+@media (max-width: 992px) {
+  /*Acá comienza la edición de index.html para vista desktop*/
+  .titulo-brand h2 {
+    margin-top: 2.5rem;
+    font-size: 0.7rem; }
+  .marca p {
+    width: 25.56rem;
+    font-size: 0.9rem; }
+  .marcaPicture img {
+    display: none; }
+  .titulo-productos h2 {
+    margin-top: 2.5rem;
+    font-size: 0.7rem; }
+  .todoslosproductos {
+    justify-content: center; }
+  .todoslosproductos h4 {
+    font-size: 0.7rem; }
+  .vistaMobileProductos {
+    width: 4.5rem;
+    height: 4.5rem; }
+  /*Acá comienza la edición de la sección 'contacto' y del formulario para vista desktop*/
+  .contactoTitulo h2 {
+    font-size: 0.7rem; }
+  .contactoTexto {
+    width: 21rem; }
+  .contacto {
+    justify-content: center; }
+  .contactoTexto h3 {
+    font-size: 0.7rem; }
+  .contactoTexto p {
+    font-size: 0.9rem; }
+  .contactoTexto ul {
+    font-size: 0.7rem; }
+  .vistaMobileEmail {
+    width: 1.5rem;
+    height: 1.5rem; }
+  .vistaMobileInstagram {
+    width: 1.5rem;
+    height: 1.5rem; }
+  .vistaMobileFacebook {
+    width: 1.5rem;
+    height: 1.5rem; }
+  .contactFormPartsOne {
+    border-bottom-right-radius: 0.9375rem;
+    border-top-left-radius: 0.9375rem;
+    width: 5rem;
+    height: 2rem;
+    font-size: 0.7rem; }
+  .contactFormPartsTwo {
+    border-bottom-right-radius: 0.9375rem;
+    border-top-left-radius: 0.9375rem;
+    width: 5rem;
+    height: 2rem;
+    font-size: 0.7rem; }
+  .textAreaModify {
+    border-bottom-right-radius: 2.5rem;
+    width: 10.5rem;
+    height: 8.125rem;
+    font-size: 0.7rem; }
+  .botonEnviar {
+    width: 3.75rem;
+    font-size: 0.75rem; }
+  form .enviar {
+    width: 1.85rem;
+    font-size: 0.45rem; }
+  /*Acá comienza la edición del footer para vista desktop*/
+  .news h4 {
+    font-size: 0.9rem; }
+  .news p {
+    font-size: 0.45rem; }
+  form .newsletterForm {
+    width: 3.5rem;
+    font-size: 0.55rem; }
+  form .newsletterFormDos {
+    width: 3.5rem;
+    font-size: 0.55rem; }
+  .preguntasFrecuentes {
+    padding: 1px; }
+  .preguntasFrecuentes h4 {
+    font-size: 0.9rem; }
+  .preguntasFrecuentes__1 a {
+    font-size: 0.7rem; }
+  .preguntasFrecuentes__2 a {
+    font-size: 0.7rem; }
+  .datos h4 {
+    font-size: 0.9rem; }
+  .iconoEmailDos {
+    width: 1.5rem;
+    height: 1.5rem; }
+  .iconoInstagramDos {
+    width: 1.5rem;
+    height: 1.5rem; }
+  .iconoFacebookDos {
+    width: 1.5rem;
+    height: 1.5rem; }
+  .datos ul li {
+    font-size: 0.7rem; }
+  /**Acá comienza la edición de raquets.html para vista desktop**/
+  .titulo-raquetas h2 {
+    margin-top: 0.5rem;
+    font-size: 0.8rem; }
+  .raquetasVistaMobile {
+    width: 4.6875rem;
+    height: 10.875rem; }
+  .raque h4 {
+    font-size: 0.7rem; }
+  .raque h5 span {
+    font-size: 0.6rem; }
+  .comoElegirRaquetaDeTenis h3 {
+    margin-left: 1.09375rem;
+    font-size: 0.9rem; }
+  .comoElegirRaquetaDeTenisParrafoBlock {
+    width: 25rem;
+    height: 7.5rem;
+    margin-left: 1.09375rem;
+    font-size: 0.7rem; }
+  .comoElegirRaquetaDeTenisTips li {
+    margin-left: 0.5rem;
+    padding-left: 0rem;
+    font-size: 0.6rem; }
+  .comoElegirRaquetaDeTenisTipsDos h3 {
+    margin-left: 1.09375rem;
+    font-size: 0.9rem; }
+  .comoElegirRaquetaDeTenisTipsDosParrafo p {
+    margin-left: 1.09375rem;
+    font-size: 0.75rem; }
+  .comoElegirRaquetaDeTenisTipsDosParrafoBlock {
+    width: 32rem;
+    height: 10.5rem;
+    margin-left: 1.09375rem; }
+  .comoElegirRaquetaDeTenisTipsDosParrafoBlock p {
+    font-size: 0.7rem; }
+  .perfilesDeRaquetasParrafosBlock {
+    width: 30rem;
+    margin-left: 1.09375rem;
+    font-size: 0.7rem; }
+  /**Acá comienza la edición de shoes.html para vista desktop**/
+  .titulo-zapatillas h2 {
+    margin-top: 0.5rem;
+    font-size: 0.7rem; }
+  .shoes h4 {
+    font-size: 0.5rem; }
+  .shoes h5 span {
+    font-size: 0.5rem; }
+  .vistaMobileShoes {
+    width: 7.5rem;
+    height: 5.625rem; }
+  /**Acá comienza la edición de clothes.html para vista desktop**/
+  .titulo-clothes h2 {
+    font-size: 0.7rem; }
+  .clothes h4 {
+    line-height: 0.4rem;
+    margin-top: 0.35rem;
+    font-size: 0.5rem; }
+  .clothes h5 span {
+    line-height: 0.1rem;
+    font-size: 0.5rem; }
+  .vistaMobileClothes {
+    width: 7.5rem;
+    height: 10rem; }
+  /**Acá comienza la edición de balls.html para vista desktop**/
+  .titulo-pelotas h2 {
+    margin-top: 0.5rem;
+    font-size: 0.9rem; }
+  .pelotas h4 {
+    font-size: 0.5rem; }
+  .pelotas h5 span {
+    font-size: 0.5rem; }
+  .vistaMobileBalls {
+    width: 6.25rem;
+    height: 6.25rem; } }
+
+@media (max-width: 576px) {
+  /*Acá comienza la edición de index.html para vista mobile*/
+  .container-fluid .navbar-brand {
+    font-size: 0.7rem; }
+  .titulo-brand h2 {
+    font-size: 0.5rem; }
+  .marca p {
+    width: 12.56rem;
+    font-size: 0.45rem; }
+  .titulo-productos h2 {
+    font-size: 0.5rem; }
+  .vistaMobileProductos {
+    width: 3.5rem;
+    height: 3.5rem; }
+  .todoslosproductos h4 {
+    font-size: 0.35rem; }
+  /*Acá comienza la edición de la sección 'contacto' y del formulario para vista mobile*/
+  .contactoTitulo h2 {
+    font-size: 0.5rem; }
+  .contacto {
+    flex-direction: column;
+    align-content: center; }
+  .contactoTexto {
+    width: 15rem; }
+  .contactoTexto h3 {
+    font-size: 0.5rem; }
+  .contactoTexto p {
+    font-size: 0.5rem; }
+  .contactoTexto ul {
+    font-size: 0.5rem; }
+  .contactForm form {
+    align-content: center; }
+  .flexStart1 {
+    align-self: center; }
+  .flexStart2 {
+    align-self: center; }
+  .vistaMobileEmail {
+    width: 1rem;
+    height: 1rem; }
+  .vistaMobileInstagram {
+    width: 1rem;
+    height: 1rem; }
+  .vistaMobileFacebook {
+    width: 1rem;
+    height: 1rem; }
+  /*Acá comienza la edición del footer para vista mobile*/
+  footer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "news" "PreguntasFrecuentes" "datos"; }
+  .iconoEmailDos {
+    width: 1rem;
+    height: 1rem; }
+  .iconoInstagramDos {
+    width: 1rem;
+    height: 1rem; }
+  .iconoFacebookDos {
+    width: 1rem;
+    height: 1rem; }
+  /**Acá comienza la edición de raquets.html para vista mobile**/
+  .titulo-raquetas h2 {
+    font-size: 0.5rem; }
+  .raquetasVistaMobile {
+    width: 1.5625rem;
+    height: 3.625rem; }
+  .raque h4 {
+    font-size: 0.45rem; }
+  .raque h5 span {
+    font-size: 0.45rem; }
+  .comoElegirRaquetaDeTenis h3 {
+    margin-left: 1.09375rem;
+    font-size: 0.5rem; }
+  .comoElegirRaquetaDeTenisParrafoBlock {
+    width: 15rem;
+    height: 3.5rem;
+    line-height: 0.8rem;
+    margin-left: 1.09375rem;
+    font-size: 0.5rem; }
+  .comoElegirRaquetaDeTenisTips li {
+    width: 15rem;
+    margin-left: 0.1rem;
+    line-height: 0.8rem;
+    padding-left: 0rem;
+    font-size: 0.5rem; }
+  .comoElegirRaquetaDeTenisTipsDosParrafo p {
+    width: 12.5rem; }
+  .comoElegirRaquetaDeTenisTipsDos h3 {
+    margin-left: 1.09375rem;
+    font-size: 0.5rem; }
+  .comoElegirRaquetaDeTenisTipsDosParrafo p {
+    line-height: 0.8rem;
+    margin-left: 0.09375rem;
+    font-size: 0.5rem; }
+  .comoElegirRaquetaDeTenisTipsDosParrafoBlock {
+    width: 9rem;
+    height: 9.5rem;
+    margin-left: 1.09375rem; }
+  .comoElegirRaquetaDeTenisTipsDosParrafoBlock p {
+    font-size: 0.5rem;
+    line-height: 0.8rem; }
+  .perfilesDeRaquetasParrafosBlock {
+    width: 12rem;
+    margin-left: 1.09375rem;
+    font-size: 0.7rem; }
+  .fotoRaquetaTips img {
+    display: none; }
+  /**Acá comienza la edición de shoes.html para vista mobile**/
+  .titulo-zapatillas h2 {
+    font-size: 0.5rem; }
+  .shoes h4 {
+    font-size: 0.45rem; }
+  .shoes h5 span {
+    font-size: 0.45rem; }
+  .vistaMobileShoes {
+    width: 3.75rem;
+    height: 2.8125rem; }
+  /**Acá comienza la edición de clothes.html para vista mobile**/
+  .titulo-clothes h2 {
+    margin-top: 0.5rem;
+    font-size: 0.5rem; }
+  .clothes h4 {
+    line-height: 0.35rem;
+    margin-top: 0.5rem;
+    font-size: 0.35rem; }
+  .clothes h5 span {
+    line-height: 0rem;
+    font-size: 0.35rem; }
+  .vistaMobileClothes {
+    width: 3.75rem;
+    height: 5rem; }
+  /**Acá comienza la edición de balls.html para vista desktop**/
+  .titulo-pelotas h2 {
+    margin-top: 0.5rem;
+    font-size: 0.5rem; }
+  .pelotas h4 {
+    font-size: 0.35rem; }
+  .pelotas h5 span {
+    font-size: 0.35rem; }
+  .vistaMobileBalls {
+    width: 3.12rem;
+    height: 3.12rem; } }

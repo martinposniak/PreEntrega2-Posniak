@@ -1,0 +1,296 @@
+/**Acá comienza la edición de raquets.html**/
+
+/*Acá comienza la edición del main, dentro del cual hay partes hechas con GRIDS y FLEXBOX*/
+
+.titulo-raquetas h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .grid-containerRaquetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "raque-modeloUno raque-modeloDos raque-modeloTres raque-modeloCuatro"
+    ;
+    justify-items: center;
+    width: 100%;
+  }
+
+  .raque h4 {
+    font-size: 0.9rem;
+  }
+  
+  .raque h5 span {
+    color: rgb(255, 0, 0);
+    font-size: 0.8rem;
+  }
+  
+  .raque {
+    text-align: center;
+  }
+  
+  .raque-modeloUno {
+    grid-area: raque-modeloUno;
+  }
+  .raque-modeloDos {
+    grid-area: raque-modeloDos;
+  }
+  .raque-modeloTres {
+    grid-area: raque-modeloTres;
+  }
+  .raque-modeloCuatro {
+    grid-area: raque-modeloCuatro;
+  }
+
+  /*Acá comienza la edición para la sección de tips para elegir una raqueta de tenis*/
+
+  .comoElegirRaquetaDeTenis {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  
+  .comoElegirRaquetaDeTenis h3 {
+    margin-left: 2.1875rem;  
+  }
+
+  .comoElegirRaquetaDeTenisParrafoBlock {
+    display: block;
+    line-height: 1cm;
+    margin-left: 4.0625rem;
+    font-size: 0.9rem;
+    width: 55rem;
+    height: 7.5rem;
+   }
+
+  .comoElegirRaquetaDeTenisTipsDosParrafoBlock {
+    width: 55rem;
+    height: 10.5rem;
+    margin-left: 4.0625rem;
+  }
+  
+ 
+  .comoElegirRaquetaDeTenisTips li {
+   margin-left: 4.0625rem;
+   padding-left: 1.5625rem;
+   line-height: 0.8cm;
+   font-size: 0.9rem;
+  }
+  
+  .comoElegirRaquetaDeTenisTipsDos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .comoElegirRaquetaDeTenisTipsDos h3 {
+    margin-top: 1rem;
+  }
+  
+  .comoElegirRaquetaDeTenisTipsDosParrafo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .comoElegirRaquetaDeTenisTipsDosParrafo p {
+    line-height: 0.8cm;
+    font-size: 0.9rem;
+    margin-left: 2.1875rem;
+  }
+  
+  .comoElegirRaquetaDeTenisTipsDosParrafo .fotoRaquetaTips {
+  align-self: center;
+  }
+
+  .perfilesDeRaquetasParrafosBlock {
+    display: block;
+    line-height: 1cm;
+    margin-left: 4.0625rem;
+    font-size: 0.9rem;
+    width: 57rem;
+  }
+
+  /**Acá le agregué una animación a los 4 productos de raquets.html**/
+/*Acá le agregué animación al modelo 1*/
+
+.raque1 {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+.raque-modeloUno {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+
+/*Acá le agregué animación al modelo 2*/
+
+.raque2 {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+.raque-modeloDos {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+
+/*Acá le agregué animación al modelo 3*/
+
+.raque3 {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+.raque-modeloTres {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+
+/*Acá le agregué animación al modelo 4*/
+.raque4 {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+.raque-modeloCuatro {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
