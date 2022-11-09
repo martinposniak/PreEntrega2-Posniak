@@ -11,9 +11,11 @@
   .grid-containerShoes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
     "shoes-modeloUno shoes-modeloDos shoes-modeloTres shoes-modeloCuatro"
+    "shoes-modeloCinco shoes-modeloSeis shoes-modeloSiete shoes-modeloOcho"
+    "shoes-modeloNueve shoes-modeloDiez shoes-modeloOnce shoes-modeloDoce"
     ;
     justify-items: center;
   }
@@ -44,7 +46,7 @@
     grid-area: shoes-modeloCuatro;
   }
   
-  /**Acá le agregué una animación a los 4 productos de shoes.html**/
+  /**Acá le agregué una animación a los 12 productos de shoes.html**/
   
   /*Acá le agregué animación al modelo 1*/
   
@@ -215,3 +217,343 @@
       opacity: 1;
     }
   }
+  /*Acá le agregué animación al modelo 5*/
+  
+  .shoes5 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  
+  .shoes-modeloCinco {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+  
+  
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  
+  /*Acá le agregué animación al modelo 6*/
+  
+  .shoes6 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  
+  .shoes-modeloSeis {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+  
+  
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  
+  /*Acá le agregué animación al modelo 7*/
+  
+  .shoes7 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  
+  .shoes-modeloSiete {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+  
+  
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  
+  /*Acá le agregué animación al modelo 8*/
+  .shoes8 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  
+  .shoes-modeloOcho {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+  
+  
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+   /*Acá le agregué animación al modelo 9*/
+  
+   .shoes9 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  
+  .shoes-modeloNueve {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+  
+  
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  
+  /*Acá le agregué animación al modelo 10*/
+  
+  .shoes10 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  
+  .shoes-modeloDiez {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+  
+  
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  
+  /*Acá le agregué animación al modelo 11*/
+  
+  .shoes11 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  
+  .shoes-modeloOnce {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+  
+  
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  
+  /*Acá le agregué animación al modelo 12*/
+  .shoes12 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  
+  .shoes-modeloDoce {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+  
+  
+  
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+
+  
