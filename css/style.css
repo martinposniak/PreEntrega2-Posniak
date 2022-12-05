@@ -1454,6 +1454,15 @@ form .enviar {
   .titulo-brand h2 {
     margin-top: 2.5rem;
     font-size: 0.7rem; }
+  .navbar {
+    position: fixed;
+    z-index: 5; }
+  .navbar .container-fluid {
+    z-index: 5; }
+  .nav-item {
+    background-color: black; }
+  .dropdown {
+    background-color: black; }
   .marca p {
     width: 25.56rem;
     font-size: 0.9rem; }
